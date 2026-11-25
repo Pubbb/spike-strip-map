@@ -177,10 +177,11 @@
     return list;
   }
 
-  function render(fit = false) {
-    layer.clearLayers();
+  // markers=false: refresh only the list/distances (used on GPS updates) so an open popup stays open
+  function render(fit = false, markers = true) {
     const list = filtered();
-    list.forEach(p => {
+    if (markers) layer.clearLayers();
+    if (markers) list.forEach(p => {
       p._marker = L.circleMarker([p._lat, p._lng], { radius: 9, weight: 2, color: '#111', fillColor: colorFor(p), fillOpacity: 1 })
         .bindPopup(() => popupHtml(p), { maxWidth: 300, autoPanPaddingTopLeft: [10, 70], autoPanPaddingBottomRight: [10, 100] }).addTo(layer);
     });
@@ -223,7 +224,11 @@
         const near = filtered().slice(0, 3).map(p => [p._lat, p._lng]);
         map.fitBounds(L.latLngBounds([me, ...near]).pad(0.3), { maxZoom: 16 });
       }
-      render();
+      // GPS fires every second or two: only redraw the list when we've moved ~25 m
+      if (!locate._at || km(locate._at, me) > 0.025 || Date.now() - locate._t > 30000) {
+        locate._at = me; locate._t = Date.now();
+        render(false, false);
+      }
     }, err => toast('Location unavailable: ' + err.message), { enableHighAccuracy: true, maximumAge: 10000, timeout: 15000 });
   }
   $('locate').onclick = () => me ? map.setView(me, Math.max(map.getZoom(), 14)) : locate(true);
