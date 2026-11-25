@@ -49,6 +49,8 @@
   .pop table { border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
   .pop td { padding: 2px 8px 2px 0; vertical-align: top; }
   .pop td:first-child { color: var(--muted); }
+  .pop .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .pop a.go.alt { background: transparent; color: var(--text); border: 1px solid var(--line); }
   .pop a.go { color: #111; display: inline-flex; align-items: center; text-decoration: none; }
   .me { width: 18px; height: 18px; border-radius: 50%; background: #2f80ff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(47,128,255,.25); }
   #legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 12px; color: var(--muted); }
@@ -154,6 +156,8 @@
     ? `https://maps.apple.com/?daddr=${p._lat},${p._lng}`
     : `https://www.google.com/maps/dir/?api=1&destination=${p._lat},${p._lng}`;
 
+  const svUrl = p => `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p._lat},${p._lng}`;
+
   function popupHtml(p) {
     const label = k => k.replace(/_/g, ' ').replace(/^./, c => c.toUpperCase());
     const rows = Object.entries(p).filter(([k, v]) => !k.startsWith('_') && v !== '' && v != null
@@ -161,7 +165,8 @@
       .map(([k, v]) => `<tr><td>${esc(label(k))}</td><td>${esc(v)}</td></tr>`).join('');
     const d = me ? ` · ${fmtDist(km(me, [p._lat, p._lng]))}` : '';
     return `<div class="pop"><h3>${esc(p._name)}${esc(d)}</h3><table>${rows}</table>
-      <a class="go" href="${navUrl(p)}" target="_blank" rel="noopener">Navigate ➜</a></div>`;
+      <div class="actions"><a class="go" href="${navUrl(p)}" target="_blank" rel="noopener">Navigate ➜</a>
+      <a class="go alt" href="${svUrl(p)}" target="_blank" rel="noopener">Street View</a></div></div>`;
   }
 
   function filtered() {
