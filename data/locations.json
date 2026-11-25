@@ -72,9 +72,9 @@
  {
   "name": "32nd Street Trailhead / E Lincoln Dr",
   "city": "Phoenix",
-  "status": "Mapped in OSM",
+  "status": "Confirmed",
   "notes": "Private one-way parking aisle; mapper tagged it \"backup spikes\".",
-  "street_view": "Not checked",
+  "street_view": "Verified on site by you, Nov 25, 2026.",
   "source": "OSM node 4901175363",
   "lat": 33.5322608,
   "lng": -112.0127933
@@ -102,9 +102,9 @@
  {
   "name": "South Mountain – 19th Ave trailhead area",
   "city": "Phoenix",
-  "status": "Mapped in OSM",
+  "status": "Confirmed",
   "notes": "One-way parking aisle near Ma Ha Tuak Trail.",
-  "street_view": "Not checked",
+  "street_view": "Verified on site by you, Nov 25, 2026.",
   "source": "OSM node 12756485978",
   "lat": 33.351492,
   "lng": -112.1002724
@@ -112,9 +112,9 @@
  {
   "name": "Pointe Business Park – driveway",
   "city": "Phoenix",
-  "status": "Mapped in OSM",
+  "status": "Confirmed",
   "notes": "One-way driveway, ~150 m from the Frier Dr spikes.",
-  "street_view": "Not checked",
+  "street_view": "Verified on site by you, Nov 25, 2026 (reported as Pointe Business Park; applied to both Pointe rows).",
   "source": "OSM node 10116136058",
   "lat": 33.5470392,
   "lng": -112.0422149
@@ -122,9 +122,9 @@
  {
   "name": "Pointe Business Park – E Frier Dr",
   "city": "Phoenix",
-  "status": "Mapped in OSM",
+  "status": "Confirmed",
   "notes": "Parking aisle on Frier Dr.",
-  "street_view": "Not checked",
+  "street_view": "Verified on site by you, Nov 25, 2026 (reported as Pointe Business Park; applied to both Pointe rows).",
   "source": "OSM node 3891229301",
   "lat": 33.5483386,
   "lng": -112.0418367
@@ -132,9 +132,9 @@
  {
   "name": "Dreamy Draw Dam / Recreation Area",
   "city": "Phoenix",
-  "status": "To verify",
+  "status": "Confirmed",
   "notes": "Coordinates are the dam; lot is at 2421 E Northern Ave.",
-  "street_view": "Only visitor photos inside the park came up; the lot entrance off Northern Ave wasn't covered.",
+  "street_view": "Verified on site by you, Nov 25, 2026 (reported as Piestewa Peak).",
   "source": "Your list",
   "lat": 33.5639424,
   "lng": -112.0325219
