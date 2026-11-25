@@ -1,84 +1,787 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-25T16:07:49Z",
+    "timestamp_osm_base": "2026-11-25T16:51:45Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
 {
   "type": "node",
-  "id": 1496913278,
-  "lat": 33.4359331,
-  "lon": -111.9440286,
+  "id": 42259734,
+  "lat": 33.4670026,
+  "lon": -111.6128950,
   "tags": {
-    "barrier": "spikes",
-    "direction": "backward",
-    "fixme": "Spikes only face North. The southbound side of the road has a gate which is closed to vehicles at night."
+    "highway": "trailhead"
   }
 },
 {
   "type": "node",
-  "id": 1558190290,
-  "lat": 33.4473417,
-  "lon": -112.0946846,
+  "id": 355025426,
+  "lat": 33.6359223,
+  "lon": -111.7689021,
   "tags": {
-    "barrier": "spikes",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 404408881,
+  "lat": 33.5790074,
+  "lon": -112.0820985,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Charles M. Christiansen Memorial Trail 100 Start"
+  }
+},
+{
+  "type": "node",
+  "id": 435412144,
+  "lat": 33.5141283,
+  "lon": -111.6821349,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Granite Reef Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 435573892,
+  "lat": 33.4661935,
+  "lon": -111.6109900,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Merkle Hill Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 437603801,
+  "lat": 33.1901899,
+  "lon": -111.6582832,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Goldmine Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1064603834,
+  "lat": 33.8469802,
+  "lon": -112.2765075,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 1143582072,
+  "lat": 33.5869587,
+  "lon": -112.4992585,
+  "tags": {
+    "access": "private",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 1143582128,
+  "lat": 33.5873150,
+  "lon": -112.4994050,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144000900,
+  "lat": 33.5835258,
+  "lon": -112.5014082,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144015011,
+  "lat": 33.5896372,
+  "lon": -112.5076251,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Waterfall Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144031177,
+  "lat": 33.5925709,
+  "lon": -112.5111460,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144040484,
+  "lat": 33.5986488,
+  "lon": -112.5125138,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144056673,
+  "lat": 33.5970877,
+  "lon": -112.5113774,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 1144084000,
+  "lat": 33.5873543,
+  "lon": -112.4998020,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Mesquite Canyon Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1144812052,
+  "lat": 33.6087628,
+  "lon": -112.5008316,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Sonoran Competitive Track Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1187461914,
+  "lat": 33.7411533,
+  "lon": -112.0972604,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Hawk's Nest Trailhead",
+    "oneway": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1195045037,
+  "lat": 33.7836606,
+  "lon": -112.0934260,
+  "tags": {
+    "barrier": "gate",
+    "barrier:keypad": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1198879798,
+  "lat": 33.7978759,
+  "lon": -112.0827746,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 1617022923,
+  "lat": 33.4314274,
+  "lon": -111.9428240,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1963459160,
+  "lat": 33.7640546,
+  "lon": -112.0493290,
+  "tags": {
+    "highway": "trailhead",
+    "name": "East Skip Rimsza Paseo;West Skip Rimsza Paseo"
+  }
+},
+{
+  "type": "node",
+  "id": 1963459212,
+  "lat": 33.7844413,
+  "lon": -112.0913487,
+  "tags": {
+    "highway": "trailhead",
+    "name": "West Skip Rimsza Paseo"
+  }
+},
+{
+  "type": "node",
+  "id": 2001383232,
+  "lat": 33.3531589,
+  "lon": -112.0725807,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Holbert Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 2024783493,
+  "lat": 33.6037926,
+  "lon": -112.0743910,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Shaw Butte Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 2077487806,
+  "lat": 33.3035017,
+  "lon": -112.1004020,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2494478477,
+  "lat": 33.7254330,
+  "lon": -112.3430603,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2556116638,
+  "lat": 33.7686575,
+  "lon": -112.0439947,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Apache Wash Trailhead;Sidewinder Trailhead;Ocotillo Trailhead;Apache Wash Paseo Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 2557995819,
+  "lat": 33.7642007,
+  "lon": -112.0495600,
+  "tags": {
+    "barrier": "gate",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "node",
+  "id": 2557995828,
+  "lat": 33.7643324,
+  "lon": -112.0496167,
+  "tags": {
+    "barrier": "gate",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "node",
+  "id": 2580183264,
+  "lat": 33.7844873,
+  "lon": -112.0609416,
+  "tags": {
+    "barrier": "gate",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "node",
+  "id": 2580183267,
+  "lat": 33.7844874,
+  "lon": -112.0609610,
+  "tags": {
+    "barrier": "gate",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "node",
+  "id": 2726803445,
+  "lat": 33.8541566,
+  "lon": -112.2881884,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2926928415,
+  "lat": 33.8475595,
+  "lon": -112.2770742,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Lake Pleasant",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 3076197038,
+  "lat": 33.8530236,
+  "lon": -112.2871234,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Lake Pleasant Boat Launch",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 3247862313,
+  "lat": 33.5647049,
+  "lon": -111.9781610,
+  "tags": {
+    "highway": "trailhead",
+    "information": "board",
+    "name": "Tatum Boulevard Trailhead",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 3250101190,
+  "lat": 33.7279013,
+  "lon": -111.8602917,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Pinacle Peak Trail"
+  }
+},
+{
+  "type": "node",
+  "id": 3337672846,
+  "lat": 33.8489327,
+  "lon": -111.8289818,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 3347290320,
+  "lat": 33.8685729,
+  "lon": -111.6184193,
+  "tags": {
+    "highway": "trailhead",
+    "name": "SB Cove Shoreline Area Trailhead",
+    "operator": "US Forest Service",
+    "website": "https://www.fs.usda.gov/r03/tonto/recreation/sb-cove-shoreline-area"
+  }
+},
+{
+  "type": "node",
+  "id": 3376122943,
+  "lat": 33.6401479,
+  "lon": -111.7683027,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Dixie Mine Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 3423932574,
+  "lat": 33.7462693,
+  "lon": -111.7951253,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Fraesfield;Monument Trail Trailhead;Whiskey Bottle Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 3442457994,
+  "lat": 33.8438171,
+  "lon": -112.0881335,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Anthem"
+  }
+},
+{
+  "type": "node",
+  "id": 3450459590,
+  "lat": 33.8503052,
+  "lon": -111.8292953,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Tonto Cave Creek Visitor Station",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 3452260219,
+  "lat": 33.6493808,
+  "lon": -111.8582502,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead;Saguaro Trail Trailhead;Bajada Nature Trail"
+  }
+},
+{
+  "type": "node",
+  "id": 3511607918,
+  "lat": 33.6939268,
+  "lon": -112.0289505,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 3615862327,
+  "lat": 33.5721070,
+  "lon": -111.8969360,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 3722797147,
+  "lat": 33.3742785,
+  "lon": -111.9857920,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Javelina Canyon Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 3727529776,
+  "lat": 33.5163516,
+  "lon": -111.6754602,
+  "tags": {
+    "access": "permissive",
+    "barrier": "gate",
     "bicycle": "yes",
     "foot": "yes",
-    "motorcar": "yes",
-    "motorcycle": "yes"
+    "horse": "no",
+    "locked": "no",
+    "material": "metal",
+    "motor_vehicle": "no",
+    "wheelchair": "no"
   }
 },
 {
   "type": "node",
-  "id": 2925531108,
-  "lat": 33.4537468,
-  "lon": -111.9515047,
+  "id": 3729443929,
+  "lat": 33.4658848,
+  "lon": -111.6073730,
   "tags": {
-    "barrier": "spikes",
-    "direction": "backward"
+    "highway": "trailhead",
+    "name": "Noso Trailhead"
   }
 },
 {
   "type": "node",
-  "id": 3891229301,
-  "lat": 33.5483386,
-  "lon": -112.0418367,
+  "id": 3729443931,
+  "lat": 33.4663827,
+  "lon": -111.6072058,
   "tags": {
-    "barrier": "spikes"
+    "highway": "trailhead",
+    "name": "Pass Mountain Trail:Maricopa Trail Trailhead"
   }
 },
 {
   "type": "node",
-  "id": 4334936068,
-  "lat": 33.3641937,
-  "lon": -111.9755380,
+  "id": 3730137787,
+  "lat": 33.6359842,
+  "lon": -111.7689048,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 3798705536,
+  "lat": 33.8641382,
+  "lon": -112.0574754,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail at Andy Kunasek Trail Head Parking",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 3958745276,
+  "lat": 33.7720642,
+  "lon": -112.1018435,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 3958745284,
+  "lat": 33.7721266,
+  "lon": -112.1017770,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 4013980331,
+  "lat": 33.5643869,
+  "lon": -112.5046320,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 4013980370,
+  "lat": 33.5651126,
+  "lon": -112.5026375,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 4145815998,
+  "lat": 33.7096073,
+  "lon": -111.7018640,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Lousley Hill Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 4197371599,
+  "lat": 33.7117634,
+  "lon": -111.7021308,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 4500912804,
+  "lat": 33.7978890,
+  "lon": -112.0850280,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Sidewinder Trailhead",
+    "traffic_calming": "table"
+  }
+},
+{
+  "type": "node",
+  "id": 4606103430,
+  "lat": 33.8642187,
+  "lon": -112.0574503,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 4606934928,
+  "lat": 33.8641250,
+  "lon": -112.0573274,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 4629005925,
+  "lat": 33.5857385,
+  "lon": -112.0821891,
   "tags": {
     "access": "yes",
-    "barrier": "spikes",
-    "motor_vehicle": "yes"
+    "addr:city": "Phoenix",
+    "addr:housenumber": "10838",
+    "addr:postcode": "85029",
+    "addr:state": "AZ",
+    "addr:street": "North 7th Avenue",
+    "highway": "trailhead",
+    "name": "7th Avenue Trailhead"
   }
 },
 {
   "type": "node",
-  "id": 4901175363,
-  "lat": 33.5322608,
-  "lon": -112.0127933,
+  "id": 4876480039,
+  "lat": 33.4658716,
+  "lon": -111.6072727,
   "tags": {
-    "barrier": "spikes",
-    "note": "backup spikes"
+    "highway": "trailhead",
+    "name": "Blevins Trailhead"
   }
 },
 {
   "type": "node",
-  "id": 5739299340,
-  "lat": 33.3073517,
-  "lon": -111.6710872,
+  "id": 5116837954,
+  "lat": 33.7269993,
+  "lon": -111.8769088,
   "tags": {
-    "barrier": "spikes",
-    "direction": "backward"
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 5116843203,
+  "lat": 33.7271287,
+  "lon": -111.8770006,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 5383970361,
+  "lat": 33.3890800,
+  "lon": -111.7627457,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 5828591762,
+  "lat": 33.5967502,
+  "lon": -111.8073540,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 5865820252,
+  "lat": 33.3034623,
+  "lon": -112.1004773,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6003910925,
+  "lat": 33.5994167,
+  "lon": -111.8041666,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6055950862,
+  "lat": 33.6958115,
+  "lon": -112.0277905,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6055950863,
+  "lat": 33.6958743,
+  "lon": -112.0277508,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6141618362,
+  "lat": 33.7288984,
+  "lon": -111.8588700,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6141618363,
+  "lat": 33.7284971,
+  "lon": -111.8589939,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6174011447,
+  "lat": 33.6401009,
+  "lon": -111.7684209,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Golden Eagle Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 6287557310,
+  "lat": 33.8813163,
+  "lon": -112.1802297,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Emery Henderson Trailhead;Black Canyon Trail",
+    "ref": "BCT"
+  }
+},
+{
+  "type": "node",
+  "id": 6287557318,
+  "lat": 33.8812504,
+  "lon": -112.1801437,
+  "tags": {
+    "access": "yes",
+    "fee": "no",
+    "highway": "trailhead",
+    "name": "Emery Henderson Trailhead;Black Canyon Trail",
+    "ref": "BCT"
+  }
+},
+{
+  "type": "node",
+  "id": 6442049053,
+  "lat": 33.4305591,
+  "lon": -111.9449304,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6876426896,
+  "lat": 33.6381570,
+  "lon": -112.4701719,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7046707919,
+  "lat": 33.3864107,
+  "lon": -112.3745403,
+  "tags": {
+    "barrier": "gate"
   }
 },
 {
@@ -92,21 +795,940 @@
 },
 {
   "type": "node",
-  "id": 10116136058,
-  "lat": 33.5470392,
-  "lon": -112.0422149,
+  "id": 7151213490,
+  "lat": 33.5647371,
+  "lon": -111.9764846,
   "tags": {
-    "barrier": "spikes"
+    "barrier": "gate"
   }
 },
 {
   "type": "node",
-  "id": 12756485978,
-  "lat": 33.3514920,
-  "lon": -112.1002724,
+  "id": 7151213503,
+  "lat": 33.5634779,
+  "lon": -111.9780487,
   "tags": {
-    "barrier": "spikes",
-    "direction": "forward"
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7151213510,
+  "lat": 33.5631487,
+  "lon": -111.9780401,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7151213515,
+  "lat": 33.5639873,
+  "lon": -111.9780456,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7151213524,
+  "lat": 33.5636892,
+  "lon": -111.9780595,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7165447311,
+  "lat": 33.8843625,
+  "lon": -111.9544662,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7621566057,
+  "lat": 33.6939653,
+  "lon": -112.0289243,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Reach 11 Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 7650566819,
+  "lat": 33.7836615,
+  "lon": -112.0932656,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7811942953,
+  "lat": 33.7855815,
+  "lon": -112.0592857,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 7821450192,
+  "lat": 33.7248400,
+  "lon": -112.3456220,
+  "tags": {
+    "access": "yes",
+    "ele": "415.174",
+    "highway": "trailhead",
+    "name": "Vietnam Memorial Trail"
+  }
+},
+{
+  "type": "node",
+  "id": 7981276584,
+  "lat": 33.7704746,
+  "lon": -111.7893422,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Granite Mountain",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 8042388398,
+  "lat": 33.7487661,
+  "lon": -112.2479957,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Paloma",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 8186248829,
+  "lat": 33.8846706,
+  "lon": -111.9551804,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8186248830,
+  "lat": 33.8850871,
+  "lon": -111.9554542,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8440854802,
+  "lat": 33.7700109,
+  "lon": -111.7876270,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "yes",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "opening_hours": "sunrise-sunset"
+  }
+},
+{
+  "type": "node",
+  "id": 8441769619,
+  "lat": 33.7434343,
+  "lon": -111.7934517,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 8441769649,
+  "lat": 33.7421306,
+  "lon": -111.7913818,
+  "tags": {
+    "barrier": "gate",
+    "bicycle": "yes",
+    "foot": "yes",
+    "motor_vehicle": "yes",
+    "opening_hours": "sunrise-sunset"
+  }
+},
+{
+  "type": "node",
+  "id": 8486626873,
+  "lat": 33.6691915,
+  "lon": -111.7020750,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Mcdowell Competitive Track"
+  }
+},
+{
+  "type": "node",
+  "id": 8487538950,
+  "lat": 33.5798905,
+  "lon": -112.0827820,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8487538951,
+  "lat": 33.5796166,
+  "lon": -112.0827838,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8525976439,
+  "lat": 33.8300810,
+  "lon": -112.0009261,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Slate Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 8528814522,
+  "lat": 33.8286542,
+  "lon": -112.0067160,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Cave Creek Regional Park",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 8604299999,
+  "lat": 33.3742610,
+  "lon": -111.9852808,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Beverly Canyon Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 8805368725,
+  "lat": 33.5174066,
+  "lon": -111.6742196,
+  "tags": {
+    "barrier": "gate",
+    "horse": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8805376335,
+  "lat": 33.5170821,
+  "lon": -111.6740470,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8912521254,
+  "lat": 33.3747862,
+  "lon": -111.9859200,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 8939878997,
+  "lat": 33.3542209,
+  "lon": -112.0728649,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9129767090,
+  "lat": 33.8786725,
+  "lon": -112.1793952,
+  "tags": {
+    "barrier": "swing_gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9178914106,
+  "lat": 33.5993440,
+  "lon": -111.8041750,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9283635721,
+  "lat": 33.5663534,
+  "lon": -111.9784391,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9283635722,
+  "lat": 33.5664401,
+  "lon": -111.9784390,
+  "tags": {
+    "barrier": "gate",
+    "barrier:keypad": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9333665479,
+  "lat": 33.6380651,
+  "lon": -112.4693658,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9379995638,
+  "lat": 33.5097956,
+  "lon": -111.6839050,
+  "tags": {
+    "barrier": "gate",
+    "locked": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9528384717,
+  "lat": 33.4810721,
+  "lon": -111.6210200,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Lost Sheep Trailhead;Maricopa Trail Trailhead",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 9550305535,
+  "lat": 33.4657009,
+  "lon": -111.6109650,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 9694602433,
+  "lat": 33.7284109,
+  "lon": -111.8590084,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 9694602437,
+  "lat": 33.7289607,
+  "lon": -111.8586905,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 10088189217,
+  "lat": 33.5109106,
+  "lon": -111.6843098,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10138704828,
+  "lat": 33.3237332,
+  "lon": -112.4396497,
+  "tags": {
+    "access": "private",
+    "barrier": "gate",
+    "locked": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10247080493,
+  "lat": 33.4711696,
+  "lon": -111.6080245,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Merkle Hill Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10247080496,
+  "lat": 33.4740681,
+  "lon": -111.6072289,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Wind Cave Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10265926358,
+  "lat": 33.6902706,
+  "lon": -111.7185195,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Pemberton Trailhead;Maricopa Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10265926369,
+  "lat": 33.6931662,
+  "lon": -111.7290460,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Tortoise Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10265926371,
+  "lat": 33.6941929,
+  "lon": -111.7310045,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Wagner Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10555634278,
+  "lat": 33.5870659,
+  "lon": -112.4992368,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10555700918,
+  "lat": 33.5869419,
+  "lon": -112.4992762,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10613073434,
+  "lat": 33.8840250,
+  "lon": -111.9549591,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Dragon Fly Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10704669419,
+  "lat": 33.7276585,
+  "lon": -111.8606640,
+  "tags": {
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10705148912,
+  "lat": 33.6379759,
+  "lon": -112.4698927,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trailhead at Sun Valley"
+  }
+},
+{
+  "type": "node",
+  "id": 10705148917,
+  "lat": 33.6356667,
+  "lon": -111.7684074,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Golden Eagle Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10705237719,
+  "lat": 33.8862406,
+  "lon": -111.9520151,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Spur Cross Trail Trailhead;Fairy Duster Trail Trailhead;Metate Trail Trailhead;Meriposa Trail Trailhead;Towhee Trail Trailhead;Maricopa Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10705237739,
+  "lat": 33.8314647,
+  "lon": -112.2756413,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead at Beardsly",
+    "ref": "MT"
+  }
+},
+{
+  "type": "node",
+  "id": 10706972441,
+  "lat": 33.6930415,
+  "lon": -111.7291024,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead;Tortoise Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10707673662,
+  "lat": 33.8272995,
+  "lon": -112.0188573,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Clay Mine"
+  }
+},
+{
+  "type": "node",
+  "id": 10707881416,
+  "lat": 33.5173532,
+  "lon": -111.6741908,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Maricopa Trail Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10726883800,
+  "lat": 33.8839493,
+  "lon": -111.9550651,
+  "tags": {
+    "access": "yes",
+    "barrier": "swing_gate",
+    "material": "metal",
+    "maxwidth": "1",
+    "motor_vehicle": "no",
+    "swing_gate:type": "single",
+    "vehicle": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10741919162,
+  "lat": 33.7701153,
+  "lon": -112.1007556,
+  "tags": {
+    "highway": "trailhead",
+    "name": "Bobcat Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10816361775,
+  "lat": 33.7701698,
+  "lon": -112.1003041,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 11398745559,
+  "lat": 33.7845087,
+  "lon": -112.0609525,
+  "tags": {
+    "highway": "trailhead",
+    "name": "10th Street Trail Head"
+  }
+},
+{
+  "type": "node",
+  "id": 11407425049,
+  "lat": 33.7267255,
+  "lon": -111.8768692,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 11754035727,
+  "lat": 33.4809070,
+  "lon": -111.6194346,
+  "tags": {
+    "barrier": "gate",
+    "locked": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11754035731,
+  "lat": 33.4804571,
+  "lon": -111.6185561,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12138724944,
+  "lat": 33.7477006,
+  "lon": -112.3550159,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12138777366,
+  "lat": 33.7453011,
+  "lon": -112.3492703,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12138800639,
+  "lat": 33.7462554,
+  "lon": -112.3534240,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12139084027,
+  "lat": 33.7418747,
+  "lon": -112.3483377,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12139135314,
+  "lat": 33.7477481,
+  "lon": -112.3551176,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12139958869,
+  "lat": 33.7474550,
+  "lon": -112.3524983,
+  "tags": {
+    "fee": "no",
+    "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 12284549605,
+  "lat": 33.4307476,
+  "lon": -111.9428539,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12537571145,
+  "lat": 33.7465933,
+  "lon": -112.3471510,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12537571197,
+  "lat": 33.7465911,
+  "lon": -112.3470661,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 13459371778,
+  "lat": 33.6038181,
+  "lon": -112.0742888,
+  "tags": {
+    "barrier": "swing_gate"
+  }
+},
+{
+  "type": "node",
+  "id": 13771239165,
+  "lat": 33.3852064,
+  "lon": -112.3766236,
+  "tags": {
+    "access": "yes",
+    "highway": "trailhead",
+    "name": "Swallowtail Trail"
+  }
+},
+{
+  "type": "node",
+  "id": 13825932026,
+  "lat": 33.7267254,
+  "lon": -111.8768535,
+  "tags": {
+    "highway": "trailhead",
+    "name": "End of Trail"
+  }
+},
+{
+  "type": "way",
+  "id": 94850600,
+  "center": {
+    "lat": 33.6403537,
+    "lon": -111.8567114
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "104th Street Trailhead"
+  }
+},
+{
+  "type": "way",
+  "id": 256114864,
+  "center": {
+    "lat": 33.8808833,
+    "lon": -112.1801505
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Emery Henderson Trailhead - Black Canyon Trail",
+    "parking": "surface",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 336595502,
+  "center": {
+    "lat": 33.7702374,
+    "lon": -111.7895254
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Granite Mountain Trailhead",
+    "opening_hours": "sunrise-sunset",
+    "operator": "City of Scottsdale",
+    "operator:type": "government",
+    "parking": "surface",
+    "supervised": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786531,
+  "center": {
+    "lat": 33.8303582,
+    "lon": -112.0016091
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Overton & Slate Trailhead Parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 689383945,
+  "center": {
+    "lat": 33.5979245,
+    "lon": -111.8047600
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Ringtail Trailhead",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 909184906,
+  "center": {
+    "lat": 33.7456065,
+    "lon": -111.7948753
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Fraesfield Mountain Trailhead",
+    "opening_hours": "sunrise-sunset",
+    "operator": "City of Scottsdale",
+    "operator:type": "government",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1011628641,
+  "center": {
+    "lat": 33.6380200,
+    "lon": -112.4697292
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Sun Valley Trailhead - Maricopa Trail",
+    "parking": "surface",
+    "surface": "gravel"
+  }
+},
+{
+  "type": "way",
+  "id": 1108060654,
+  "center": {
+    "lat": 33.3233062,
+    "lon": -112.4399690
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "FINS Trailhead Parking",
+    "surface": "gravel"
+  }
+},
+{
+  "type": "way",
+  "id": 1150766655,
+  "center": {
+    "lat": 33.6354532,
+    "lon": -111.7685442
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Golden Eagle Trailhead Parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1150766656,
+  "center": {
+    "lat": 33.6354867,
+    "lon": -111.7692147
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Golden Eagle Trailhead Parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1150969495,
+  "center": {
+    "lat": 33.7701587,
+    "lon": -112.1006251
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Bobcat Trailhead Parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1262010516,
+  "center": {
+    "lat": 33.8136834,
+    "lon": -111.9687655
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Trailhead Parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1335108096,
+  "center": {
+    "lat": 33.3032480,
+    "lon": -112.1033669
+  },
+  "tags": {
+    "addr:city": "Phoenix",
+    "addr:housenumber": "2000",
+    "addr:state": "AZ",
+    "addr:street": "West Chandler Boulevard",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Bursera Trailhead",
+    "toilets": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1383070311,
+  "center": {
+    "lat": 33.7733446,
+    "lon": -111.7606354
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Ranch Road Trailhead",
+    "operator": "USFS",
+    "operator:type": "government",
+    "parking": "surface",
+    "surface": "dirt"
   }
 }
 
