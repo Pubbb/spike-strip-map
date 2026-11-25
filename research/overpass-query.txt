@@ -1,11 +1,7 @@
 [out:json][timeout:240];
-(
-  nwr["barrier"="spikes"](33.0,-113.0,34.0,-111.3);
-  nwr["spikes"](33.0,-113.0,34.0,-111.3);
-  nwr["tyre_spikes"](33.0,-113.0,34.0,-111.3);
-  nwr["tire_spikes"](33.0,-113.0,34.0,-111.3);
-  node["barrier"]["note"~"spike|tire damage",i](33.0,-113.0,34.0,-111.3);
-  node["barrier"]["description"~"spike|tire damage",i](33.0,-113.0,34.0,-111.3);
-  nwr["traffic_calming"~"spike",i](33.0,-113.0,34.0,-111.3);
-);
+nwr["highway"="trailhead"](33.15,-112.65,33.90,-111.55)->.th;
+nwr["amenity"="parking"]["name"~"trailhead",i](33.15,-112.65,33.90,-111.55)->.tp;
+(.th; .tp;)->.all;
+nwr(around.all:250)["barrier"~"^(gate|lift_gate|swing_gate|spikes)$"]->.gates;
+(.all; .gates;);
 out center tags;
