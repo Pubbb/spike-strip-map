@@ -2,11 +2,20 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-25T16:51:45Z",
+    "timestamp_osm_base": "2026-11-25T16:52:48Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 42012906,
+  "lat": 33.5958485,
+  "lon": -112.5061048,
+  "tags": {
+    "barrier": "gate"
+  }
+},
 {
   "type": "node",
   "id": 42259734,
@@ -132,6 +141,15 @@
 },
 {
   "type": "node",
+  "id": 1144056672,
+  "lat": 33.5924597,
+  "lon": -112.5011443,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
   "id": 1144056673,
   "lat": 33.5970877,
   "lon": -112.5113774,
@@ -172,16 +190,6 @@
 },
 {
   "type": "node",
-  "id": 1195045037,
-  "lat": 33.7836606,
-  "lon": -112.0934260,
-  "tags": {
-    "barrier": "gate",
-    "barrier:keypad": "yes"
-  }
-},
-{
-  "type": "node",
   "id": 1198879798,
   "lat": 33.7978759,
   "lon": -112.0827746,
@@ -196,6 +204,42 @@
   "lon": -111.9428240,
   "tags": {
     "highway": "trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 1667554568,
+  "lat": 33.4691230,
+  "lon": -111.6072712,
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1667554634,
+  "lat": 33.4684517,
+  "lon": -111.6071103,
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1667554683,
+  "lat": 33.4677537,
+  "lon": -111.6073410,
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "node",
+  "id": 1667554709,
+  "lat": 33.4660800,
+  "lon": -111.6099749,
+  "tags": {
+    "amenity": "parking"
   }
 },
 {
@@ -220,6 +264,15 @@
 },
 {
   "type": "node",
+  "id": 1984425105,
+  "lat": 33.6944673,
+  "lon": -112.0225884,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
   "id": 2001383232,
   "lat": 33.3531589,
   "lon": -112.0725807,
@@ -240,18 +293,37 @@
 },
 {
   "type": "node",
-  "id": 2077487806,
-  "lat": 33.3035017,
-  "lon": -112.1004020,
+  "id": 2161484366,
+  "lat": 33.3766511,
+  "lon": -111.9826427,
   "tags": {
     "barrier": "gate"
   }
 },
 {
   "type": "node",
-  "id": 2494478477,
-  "lat": 33.7254330,
-  "lon": -112.3430603,
+  "id": 2161484495,
+  "lat": 33.3773892,
+  "lon": -111.9804720,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2161484499,
+  "lat": 33.3774772,
+  "lon": -111.9822410,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 2225979231,
+  "lat": 33.3784925,
+  "lon": -111.9841500,
   "tags": {
     "barrier": "gate"
   }
@@ -264,46 +336,6 @@
   "tags": {
     "highway": "trailhead",
     "name": "Apache Wash Trailhead;Sidewinder Trailhead;Ocotillo Trailhead;Apache Wash Paseo Trailhead"
-  }
-},
-{
-  "type": "node",
-  "id": 2557995819,
-  "lat": 33.7642007,
-  "lon": -112.0495600,
-  "tags": {
-    "barrier": "gate",
-    "source": "GPS survey tracks."
-  }
-},
-{
-  "type": "node",
-  "id": 2557995828,
-  "lat": 33.7643324,
-  "lon": -112.0496167,
-  "tags": {
-    "barrier": "gate",
-    "source": "GPS survey tracks."
-  }
-},
-{
-  "type": "node",
-  "id": 2580183264,
-  "lat": 33.7844873,
-  "lon": -112.0609416,
-  "tags": {
-    "barrier": "gate",
-    "source": "GPS survey tracks."
-  }
-},
-{
-  "type": "node",
-  "id": 2580183267,
-  "lat": 33.7844874,
-  "lon": -112.0609610,
-  "tags": {
-    "barrier": "gate",
-    "source": "GPS survey tracks."
   }
 },
 {
@@ -433,9 +465,18 @@
 },
 {
   "type": "node",
-  "id": 3511607918,
-  "lat": 33.6939268,
-  "lon": -112.0289505,
+  "id": 3545964360,
+  "lat": 33.4286846,
+  "lon": -111.9444509,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 3545964376,
+  "lat": 33.4289632,
+  "lon": -111.9446572,
   "tags": {
     "barrier": "gate"
   }
@@ -459,23 +500,6 @@
   "tags": {
     "highway": "trailhead",
     "name": "Javelina Canyon Trailhead"
-  }
-},
-{
-  "type": "node",
-  "id": 3727529776,
-  "lat": 33.5163516,
-  "lon": -111.6754602,
-  "tags": {
-    "access": "permissive",
-    "barrier": "gate",
-    "bicycle": "yes",
-    "foot": "yes",
-    "horse": "no",
-    "locked": "no",
-    "material": "metal",
-    "motor_vehicle": "no",
-    "wheelchair": "no"
   }
 },
 {
@@ -520,25 +544,6 @@
 },
 {
   "type": "node",
-  "id": 3958745276,
-  "lat": 33.7720642,
-  "lon": -112.1018435,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 3958745284,
-  "lat": 33.7721266,
-  "lon": -112.1017770,
-  "tags": {
-    "access:delivery": "no",
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
   "id": 4013980331,
   "lat": 33.5643869,
   "lon": -112.5046320,
@@ -576,6 +581,15 @@
 },
 {
   "type": "node",
+  "id": 4197371600,
+  "lat": 33.7110270,
+  "lon": -111.7070888,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
   "id": 4500912804,
   "lat": 33.7978890,
   "lon": -112.0850280,
@@ -583,24 +597,6 @@
     "highway": "trailhead",
     "name": "Sidewinder Trailhead",
     "traffic_calming": "table"
-  }
-},
-{
-  "type": "node",
-  "id": 4606103430,
-  "lat": 33.8642187,
-  "lon": -112.0574503,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 4606934928,
-  "lat": 33.8641250,
-  "lon": -112.0573274,
-  "tags": {
-    "barrier": "gate"
   }
 },
 {
@@ -631,24 +627,6 @@
 },
 {
   "type": "node",
-  "id": 5116837954,
-  "lat": 33.7269993,
-  "lon": -111.8769088,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 5116843203,
-  "lat": 33.7271287,
-  "lon": -111.8770006,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
   "id": 5383970361,
   "lat": 33.3890800,
   "lon": -111.7627457,
@@ -659,28 +637,9 @@
 },
 {
   "type": "node",
-  "id": 5828591762,
-  "lat": 33.5967502,
-  "lon": -111.8073540,
-  "tags": {
-    "access:delivery": "no",
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 5865820252,
-  "lat": 33.3034623,
-  "lon": -112.1004773,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 6003910925,
-  "lat": 33.5994167,
-  "lon": -111.8041666,
+  "id": 5634899234,
+  "lat": 33.4294497,
+  "lon": -111.9452165,
   "tags": {
     "barrier": "gate"
   }
@@ -705,21 +664,20 @@
 },
 {
   "type": "node",
-  "id": 6141618362,
-  "lat": 33.7288984,
-  "lon": -111.8588700,
-  "tags": {
-    "access:delivery": "no",
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
   "id": 6141618363,
   "lat": 33.7284971,
   "lon": -111.8589939,
   "tags": {
     "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6145086935,
+  "lat": 33.6674215,
+  "lon": -111.6978909,
+  "tags": {
+    "barrier": "lift_gate"
   }
 },
 {
@@ -758,9 +716,28 @@
 },
 {
   "type": "node",
+  "id": 6442049052,
+  "lat": 33.4294461,
+  "lon": -111.9450090,
+  "tags": {
+    "access:delivery": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
   "id": 6442049053,
   "lat": 33.4305591,
   "lon": -111.9449304,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 6442049054,
+  "lat": 33.4305477,
+  "lon": -111.9453641,
   "tags": {
     "barrier": "gate"
   }
@@ -786,54 +763,9 @@
 },
 {
   "type": "node",
-  "id": 7094311443,
-  "lat": 33.3034323,
-  "lon": -112.1004809,
-  "tags": {
-    "barrier": "spikes"
-  }
-},
-{
-  "type": "node",
-  "id": 7151213490,
-  "lat": 33.5647371,
-  "lon": -111.9764846,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 7151213503,
-  "lat": 33.5634779,
-  "lon": -111.9780487,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 7151213510,
-  "lat": 33.5631487,
-  "lon": -111.9780401,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
   "id": 7151213515,
   "lat": 33.5639873,
   "lon": -111.9780456,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 7151213524,
-  "lat": 33.5636892,
-  "lon": -111.9780595,
   "tags": {
     "barrier": "gate"
   }
@@ -849,6 +781,16 @@
 },
 {
   "type": "node",
+  "id": 7276322906,
+  "lat": 33.3787826,
+  "lon": -111.9828130,
+  "tags": {
+    "barrier": "gate",
+    "barrier:keypad": "yes"
+  }
+},
+{
+  "type": "node",
   "id": 7621566057,
   "lat": 33.6939653,
   "lon": -112.0289243,
@@ -859,18 +801,9 @@
 },
 {
   "type": "node",
-  "id": 7650566819,
-  "lat": 33.7836615,
-  "lon": -112.0932656,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 7811942953,
-  "lat": 33.7855815,
-  "lon": -112.0592857,
+  "id": 7701911319,
+  "lat": 33.3786009,
+  "lon": -111.9843638,
   "tags": {
     "barrier": "gate"
   }
@@ -1025,20 +958,20 @@
 },
 {
   "type": "node",
-  "id": 8805368725,
-  "lat": 33.5174066,
-  "lon": -111.6742196,
+  "id": 8897737879,
+  "lat": 33.3785054,
+  "lon": -111.9844127,
   "tags": {
-    "barrier": "gate",
-    "horse": "no"
+    "barrier": "gate"
   }
 },
 {
   "type": "node",
-  "id": 8805376335,
-  "lat": 33.5170821,
-  "lon": -111.6740470,
+  "id": 8897737899,
+  "lat": 33.3779630,
+  "lon": -111.9855616,
   "tags": {
+    "access:delivery": "no",
     "barrier": "gate"
   }
 },
@@ -1058,63 +991,6 @@
   "lon": -112.0728649,
   "tags": {
     "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 9129767090,
-  "lat": 33.8786725,
-  "lon": -112.1793952,
-  "tags": {
-    "barrier": "swing_gate"
-  }
-},
-{
-  "type": "node",
-  "id": 9178914106,
-  "lat": 33.5993440,
-  "lon": -111.8041750,
-  "tags": {
-    "access:delivery": "no",
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 9283635721,
-  "lat": 33.5663534,
-  "lon": -111.9784391,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 9283635722,
-  "lat": 33.5664401,
-  "lon": -111.9784390,
-  "tags": {
-    "barrier": "gate",
-    "barrier:keypad": "yes"
-  }
-},
-{
-  "type": "node",
-  "id": 9333665479,
-  "lat": 33.6380651,
-  "lon": -112.4693658,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 9379995638,
-  "lat": 33.5097956,
-  "lon": -111.6839050,
-  "tags": {
-    "barrier": "gate",
-    "locked": "no"
   }
 },
 {
@@ -1148,11 +1024,10 @@
 },
 {
   "type": "node",
-  "id": 9694602437,
-  "lat": 33.7289607,
-  "lon": -111.8586905,
+  "id": 9770988799,
+  "lat": 33.3779587,
+  "lon": -111.9865006,
   "tags": {
-    "access:delivery": "no",
     "barrier": "gate"
   }
 },
@@ -1167,13 +1042,11 @@
 },
 {
   "type": "node",
-  "id": 10138704828,
-  "lat": 33.3237332,
-  "lon": -112.4396497,
+  "id": 10247080492,
+  "lat": 33.4671211,
+  "lon": -111.6130004,
   "tags": {
-    "access": "private",
-    "barrier": "gate",
-    "locked": "yes"
+    "amenity": "parking"
   }
 },
 {
@@ -1188,12 +1061,39 @@
 },
 {
   "type": "node",
+  "id": 10247080494,
+  "lat": 33.4710945,
+  "lon": -111.6078230,
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "node",
+  "id": 10247080495,
+  "lat": 33.4713204,
+  "lon": -111.6078859,
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "node",
   "id": 10247080496,
   "lat": 33.4740681,
   "lon": -111.6072289,
   "tags": {
     "highway": "trailhead",
     "name": "Wind Cave Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10247080497,
+  "lat": 33.4740332,
+  "lon": -111.6074303,
+  "tags": {
+    "amenity": "parking"
   }
 },
 {
@@ -1208,12 +1108,31 @@
 },
 {
   "type": "node",
+  "id": 10265926368,
+  "lat": 33.6905060,
+  "lon": -111.7180270,
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "node",
   "id": 10265926369,
   "lat": 33.6931662,
   "lon": -111.7290460,
   "tags": {
     "highway": "trailhead",
     "name": "Tortoise Trailhead"
+  }
+},
+{
+  "type": "node",
+  "id": 10265926370,
+  "lat": 33.6943743,
+  "lon": -111.7312267,
+  "tags": {
+    "amenity": "parking"
   }
 },
 {
@@ -1336,21 +1255,6 @@
 },
 {
   "type": "node",
-  "id": 10726883800,
-  "lat": 33.8839493,
-  "lon": -111.9550651,
-  "tags": {
-    "access": "yes",
-    "barrier": "swing_gate",
-    "material": "metal",
-    "maxwidth": "1",
-    "motor_vehicle": "no",
-    "swing_gate:type": "single",
-    "vehicle": "no"
-  }
-},
-{
-  "type": "node",
   "id": 10741919162,
   "lat": 33.7701153,
   "lon": -112.1007556,
@@ -1370,21 +1274,21 @@
 },
 {
   "type": "node",
+  "id": 11198607090,
+  "lat": 33.7421392,
+  "lon": -111.8878638,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
   "id": 11398745559,
   "lat": 33.7845087,
   "lon": -112.0609525,
   "tags": {
     "highway": "trailhead",
     "name": "10th Street Trail Head"
-  }
-},
-{
-  "type": "node",
-  "id": 11407425049,
-  "lat": 33.7267255,
-  "lon": -111.8768692,
-  "tags": {
-    "barrier": "gate"
   }
 },
 {
@@ -1402,6 +1306,15 @@
   "id": 11754035731,
   "lat": 33.4804571,
   "lon": -111.6185561,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12018169415,
+  "lat": 33.7417568,
+  "lon": -112.0998936,
   "tags": {
     "barrier": "gate"
   }
@@ -1478,33 +1391,6 @@
 },
 {
   "type": "node",
-  "id": 12537571145,
-  "lat": 33.7465933,
-  "lon": -112.3471510,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 12537571197,
-  "lat": 33.7465911,
-  "lon": -112.3470661,
-  "tags": {
-    "barrier": "gate"
-  }
-},
-{
-  "type": "node",
-  "id": 13459371778,
-  "lat": 33.6038181,
-  "lon": -112.0742888,
-  "tags": {
-    "barrier": "swing_gate"
-  }
-},
-{
-  "type": "node",
   "id": 13771239165,
   "lat": 33.3852064,
   "lon": -112.3766236,
@@ -1526,14 +1412,387 @@
 },
 {
   "type": "way",
-  "id": 94850600,
+  "id": 29473680,
   "center": {
-    "lat": 33.6403537,
-    "lon": -111.8567114
+    "lat": 33.7281743,
+    "lon": -111.8602040
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 34722635,
+  "center": {
+    "lat": 33.5772845,
+    "lon": -112.0819221
   },
   "tags": {
     "amenity": "parking",
-    "name": "104th Street Trailhead"
+    "capacity": "66",
+    "capacity:disabled": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 34722639,
+  "center": {
+    "lat": 33.5789324,
+    "lon": -112.0817380
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 34744582,
+  "center": {
+    "lat": 33.5803060,
+    "lon": -112.0831540
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 34744863,
+  "center": {
+    "lat": 33.5793019,
+    "lon": -112.0841081
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 76656466,
+  "center": {
+    "lat": 33.3510725,
+    "lon": -112.0738340
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "source": "Yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 92789869,
+  "center": {
+    "lat": 33.3743049,
+    "lon": -111.9855334
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 93281390,
+  "center": {
+    "lat": 33.6486461,
+    "lon": -111.8601656
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 93288442,
+  "center": {
+    "lat": 33.8325812,
+    "lon": -112.0011617
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 93288444,
+  "center": {
+    "lat": 33.8292592,
+    "lon": -112.0038824
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 93288921,
+  "center": {
+    "lat": 33.8286900,
+    "lon": -112.0062452
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 93290099,
+  "center": {
+    "lat": 33.8294404,
+    "lon": -112.0017409
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Equestrian Staging Area",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 98850174,
+  "center": {
+    "lat": 33.6080131,
+    "lon": -112.5002044
+  },
+  "tags": {
+    "amenity": "parking",
+    "surface": "unpaved"
+  }
+},
+{
+  "type": "way",
+  "id": 98851983,
+  "center": {
+    "lat": 33.5871658,
+    "lon": -112.4996243
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 98886268,
+  "center": {
+    "lat": 33.5925204,
+    "lon": -112.5108388
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 98886617,
+  "center": {
+    "lat": 33.5836964,
+    "lon": -112.5008062
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 98893365,
+  "center": {
+    "lat": 33.5863819,
+    "lon": -112.4985006
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 102830335,
+  "center": {
+    "lat": 33.7408919,
+    "lon": -112.0977671
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 158420593,
+  "center": {
+    "lat": 33.3524421,
+    "lon": -112.0690642
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 189541136,
+  "center": {
+    "lat": 33.3523656,
+    "lon": -112.0738172
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity:disabled": "5",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 191917843,
+  "center": {
+    "lat": 33.6035591,
+    "lon": -112.0741781
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "31",
+    "capacity:disabled": "3",
+    "capacity:parent": "no",
+    "capacity:women": "n",
+    "lit": "yes",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 200784364,
+  "center": {
+    "lat": 33.5646755,
+    "lon": -111.9779864
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "5",
+    "capacity:disabled": "1",
+    "fee": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 231047353,
+  "center": {
+    "lat": 33.5714384,
+    "lon": -111.8965127
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 231363435,
+  "center": {
+    "lat": 33.8436964,
+    "lon": -112.0881896
+  },
+  "tags": {
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Maricopa Trail Parking",
+    "park_ride": "no",
+    "parking": "surface",
+    "ref": "MT"
+  }
+},
+{
+  "type": "way",
+  "id": 248896761,
+  "center": {
+    "lat": 33.7677872,
+    "lon": -112.0468219
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Equestrian Trailer Parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 249131933,
+  "center": {
+    "lat": 33.7673226,
+    "lon": -112.0454065
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "way",
+  "id": 249131935,
+  "center": {
+    "lat": 33.7675229,
+    "lon": -112.0453761
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "way",
+  "id": 249131936,
+  "center": {
+    "lat": 33.7677890,
+    "lon": -112.0449908
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "way",
+  "id": 251858377,
+  "center": {
+    "lat": 33.5710211,
+    "lon": -111.8995820
+  },
+  "tags": {
+    "amenity": "parking"
   }
 },
 {
@@ -1550,6 +1809,37 @@
     "name": "Emery Henderson Trailhead - Black Canyon Trail",
     "parking": "surface",
     "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 318755222,
+  "center": {
+    "lat": 33.5920903,
+    "lon": -112.5096948
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 334959055,
+  "center": {
+    "lat": 33.8857434,
+    "lon": -111.9521042
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "capacity": "200",
+    "fee": "no",
+    "lit": "no",
+    "name": "Spur Cross Ranch Conservation Area parking",
+    "opening_hours": "sunrise-sunset",
+    "parking": "surface",
+    "supervised": "no",
+    "surface": "gravel"
   }
 },
 {
@@ -1574,6 +1864,51 @@
 },
 {
   "type": "way",
+  "id": 337976232,
+  "center": {
+    "lat": 33.8521259,
+    "lon": -111.8314376
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "32",
+    "capacity:disabled": "2",
+    "capacity:parent": "no",
+    "capacity:women": "no",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 337976235,
+  "center": {
+    "lat": 33.8499323,
+    "lon": -111.8291222
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "32",
+    "capacity:disabled": "2",
+    "capacity:parent": "no",
+    "capacity:women": "no",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 344411092,
+  "center": {
+    "lat": 33.6941632,
+    "lon": -112.0289380
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
   "id": 389786531,
   "center": {
     "lat": 33.8303582,
@@ -1589,15 +1924,634 @@
 },
 {
   "type": "way",
-  "id": 689383945,
+  "id": 389786532,
   "center": {
-    "lat": 33.5979245,
-    "lon": -111.8047600
+    "lat": 33.8314121,
+    "lon": -112.0000834
   },
   "tags": {
     "amenity": "parking",
-    "name": "Ringtail Trailhead",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786533,
+  "center": {
+    "lat": 33.8310514,
+    "lon": -112.0002686
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786534,
+  "center": {
+    "lat": 33.8310040,
+    "lon": -112.0018596
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786535,
+  "center": {
+    "lat": 33.8314347,
+    "lon": -112.0016641
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786536,
+  "center": {
+    "lat": 33.8303729,
+    "lon": -112.0004815
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786538,
+  "center": {
+    "lat": 33.8317620,
+    "lon": -112.0015166
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786539,
+  "center": {
+    "lat": 33.8320351,
+    "lon": -112.0013427
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786540,
+  "center": {
+    "lat": 33.8305731,
+    "lon": -112.0001966
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786541,
+  "center": {
+    "lat": 33.8321829,
+    "lon": -112.0003250
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389786542,
+  "center": {
+    "lat": 33.8318471,
+    "lon": -112.0002542
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 389799168,
+  "center": {
+    "lat": 33.8265331,
+    "lon": -112.0200347
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 389799171,
+  "center": {
+    "lat": 33.8256638,
+    "lon": -112.0210743
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 398650312,
+  "center": {
+    "lat": 33.5650928,
+    "lon": -112.5024667
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 398650313,
+  "center": {
+    "lat": 33.5653946,
+    "lon": -112.5030449
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 413710977,
+  "center": {
+    "lat": 33.6903155,
+    "lon": -111.7180388
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 413710979,
+  "center": {
+    "lat": 33.7101567,
+    "lon": -111.7001273
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710982,
+  "center": {
+    "lat": 33.7111717,
+    "lon": -111.7004423
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710984,
+  "center": {
+    "lat": 33.7095580,
+    "lon": -111.6994732
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710986,
+  "center": {
+    "lat": 33.7096102,
+    "lon": -111.6988191
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710989,
+  "center": {
+    "lat": 33.7110983,
+    "lon": -111.6994176
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710991,
+  "center": {
+    "lat": 33.7113158,
+    "lon": -111.7011773
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710993,
+  "center": {
+    "lat": 33.7099709,
+    "lon": -111.7025751
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710994,
+  "center": {
+    "lat": 33.7102490,
+    "lon": -111.7043520
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 413710996,
+  "center": {
+    "lat": 33.7096594,
+    "lon": -111.7022816
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 418523206,
+  "center": {
+    "lat": 33.6681510,
+    "lon": -111.7004327
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Staging Area;Mcdowell Competitive Track",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 419731559,
+  "center": {
+    "lat": 33.6952387,
+    "lon": -111.7312289
+  },
+  "tags": {
+    "amenity": "parking",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 432522476,
+  "center": {
+    "lat": 33.1904418,
+    "lon": -111.6582787
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "intermediate",
+    "surface": "dirt"
+  }
+},
+{
+  "type": "way",
+  "id": 463345352,
+  "center": {
+    "lat": 33.3540911,
+    "lon": -112.0739732
+  },
+  "tags": {
+    "amenity": "parking",
     "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 514420222,
+  "center": {
+    "lat": 33.3755330,
+    "lon": -111.9861704
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 514420412,
+  "center": {
+    "lat": 33.3754278,
+    "lon": -111.9823857
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 514421646,
+  "center": {
+    "lat": 33.3772772,
+    "lon": -111.9834081
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 558327414,
+  "center": {
+    "lat": 33.3889777,
+    "lon": -111.7626317
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 598619297,
+  "center": {
+    "lat": 33.4294413,
+    "lon": -111.9445040
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 598619301,
+  "center": {
+    "lat": 33.4299892,
+    "lon": -111.9444979
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 625701359,
+  "center": {
+    "lat": 33.4286874,
+    "lon": -111.9439768
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "parking": "surface",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 662533051,
+  "center": {
+    "lat": 33.8473181,
+    "lon": -112.2773813
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 662533052,
+  "center": {
+    "lat": 33.8536845,
+    "lon": -112.2893285
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 775635933,
+  "center": {
+    "lat": 33.5654577,
+    "lon": -112.5005191
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 775636825,
+  "center": {
+    "lat": 33.5904067,
+    "lon": -112.5075466
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 775841323,
+  "center": {
+    "lat": 33.6064888,
+    "lon": -112.5012956
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "11"
+  }
+},
+{
+  "type": "way",
+  "id": 775841325,
+  "center": {
+    "lat": 33.5984779,
+    "lon": -112.5121521
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 775841326,
+  "center": {
+    "lat": 33.5993184,
+    "lon": -112.5126182
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 775841327,
+  "center": {
+    "lat": 33.5998086,
+    "lon": -112.5123967
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 816075771,
+  "center": {
+    "lat": 33.6938168,
+    "lon": -112.0280908
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "fine_gravel"
+  }
+},
+{
+  "type": "way",
+  "id": 863324843,
+  "center": {
+    "lat": 33.7480424,
+    "lon": -112.2468211
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "96"
+  }
+},
+{
+  "type": "way",
+  "id": 863324847,
+  "center": {
+    "lat": 33.7489479,
+    "lon": -112.2491397
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "241"
+  }
+},
+{
+  "type": "way",
+  "id": 899914036,
+  "center": {
+    "lat": 33.6950231,
+    "lon": -112.0269106
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 899914037,
+  "center": {
+    "lat": 33.6951087,
+    "lon": -112.0263972
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 899914078,
+  "center": {
+    "lat": 33.6951607,
+    "lon": -112.0278045
+  },
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "capacity": "8",
+    "capacity:disabled": "1",
+    "fee": "no",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 901442709,
+  "center": {
+    "lat": 33.7976440,
+    "lon": -112.0832867
+  },
+  "tags": {
+    "amenity": "parking",
+    "fee": "no",
+    "name": "Horse Trailer Parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
   }
 },
 {
@@ -1621,6 +2575,35 @@
 },
 {
   "type": "way",
+  "id": 951300277,
+  "center": {
+    "lat": 33.5171322,
+    "lon": -111.6743573
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "name": "Hawer Trail Parking",
+    "parking": "surface",
+    "surface": "unpaved"
+  }
+},
+{
+  "type": "way",
+  "id": 966300700,
+  "center": {
+    "lat": 33.3539632,
+    "lon": -112.0730265
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity:disabled": "1",
+    "parking": "surface",
+    "surface": "compacted"
+  }
+},
+{
+  "type": "way",
   "id": 1011628641,
   "center": {
     "lat": 33.6380200,
@@ -1637,15 +2620,144 @@
 },
 {
   "type": "way",
-  "id": 1108060654,
+  "id": 1067485901,
   "center": {
-    "lat": 33.3233062,
-    "lon": -112.4399690
+    "lat": 33.5665454,
+    "lon": -112.5044700
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1067485919,
+  "center": {
+    "lat": 33.5846876,
+    "lon": -112.5012881
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "capacity:disabled": "3",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1069117016,
+  "center": {
+    "lat": 33.5675156,
+    "lon": -112.5017284
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1069117028,
+  "center": {
+    "lat": 33.5963032,
+    "lon": -112.5114162
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1069117038,
+  "center": {
+    "lat": 33.6004572,
+    "lon": -112.5115590
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1069117039,
+  "center": {
+    "lat": 33.6000194,
+    "lon": -112.5100556
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1069117040,
+  "center": {
+    "lat": 33.5973673,
+    "lon": -112.5098853
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1138532788,
+  "center": {
+    "lat": 33.8840851,
+    "lon": -111.9548879
   },
   "tags": {
     "amenity": "parking",
-    "name": "FINS Trailhead Parking",
-    "surface": "gravel"
+    "capacity": "20",
+    "name": "Jewel of the Creek Parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1140666799,
+  "center": {
+    "lat": 33.7845565,
+    "lon": -112.0610802
+  },
+  "tags": {
+    "amenity": "parking",
+    "source": "GPS survey tracks."
+  }
+},
+{
+  "type": "way",
+  "id": 1150039771,
+  "center": {
+    "lat": 33.3855875,
+    "lon": -112.3732905
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1150039772,
+  "center": {
+    "lat": 33.3856058,
+    "lon": -112.3747958
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1150039773,
+  "center": {
+    "lat": 33.3857029,
+    "lon": -112.3766934
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
   }
 },
 {
@@ -1674,6 +2786,17 @@
 },
 {
   "type": "way",
+  "id": 1150803420,
+  "center": {
+    "lat": 33.8314546,
+    "lon": -112.2755366
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
   "id": 1150969495,
   "center": {
     "lat": 33.7701587,
@@ -1686,49 +2809,358 @@
 },
 {
   "type": "way",
-  "id": 1262010516,
+  "id": 1150969496,
   "center": {
-    "lat": 33.8136834,
-    "lon": -111.9687655
+    "lat": 33.7843812,
+    "lon": -112.0906402
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1150969499,
+  "center": {
+    "lat": 33.7408312,
+    "lon": -112.0971459
   },
   "tags": {
     "amenity": "parking",
-    "name": "Trailhead Parking",
+    "name": "Horse Trailer Parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1150983160,
+  "center": {
+    "lat": 33.6929012,
+    "lon": -111.7290304
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1150983161,
+  "center": {
+    "lat": 33.7436014,
+    "lon": -111.7932621
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1151071352,
+  "center": {
+    "lat": 33.4660517,
+    "lon": -111.6073474
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Usery Mountain Regional Park Picnic Area Parking",
     "parking": "surface"
   }
 },
 {
   "type": "way",
-  "id": 1335108096,
+  "id": 1151071356,
   "center": {
-    "lat": 33.3032480,
-    "lon": -112.1033669
+    "lat": 33.5141892,
+    "lon": -111.6821002
   },
   "tags": {
-    "addr:city": "Phoenix",
-    "addr:housenumber": "2000",
-    "addr:state": "AZ",
-    "addr:street": "West Chandler Boulevard",
-    "amenity": "parking",
-    "fee": "no",
-    "name": "Bursera Trailhead",
-    "toilets": "no"
+    "amenity": "parking"
   }
 },
 {
   "type": "way",
-  "id": 1383070311,
+  "id": 1151086151,
   "center": {
-    "lat": 33.7733446,
-    "lon": -111.7606354
+    "lat": 33.4805452,
+    "lon": -111.6190163
   },
   "tags": {
     "amenity": "parking",
-    "name": "Ranch Road Trailhead",
-    "operator": "USFS",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1151086152,
+  "center": {
+    "lat": 33.4811923,
+    "lon": -111.6207343
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1155218980,
+  "center": {
+    "lat": 33.5106415,
+    "lon": -111.6844120
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "operator": "Maricopa County",
     "operator:type": "government",
     "parking": "surface",
-    "surface": "dirt"
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1232551318,
+  "center": {
+    "lat": 33.6035806,
+    "lon": -112.0713368
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1258404612,
+  "center": {
+    "lat": 33.3841747,
+    "lon": -112.3780067
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1258404613,
+  "center": {
+    "lat": 33.3829994,
+    "lon": -112.3766829
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1258404617,
+  "center": {
+    "lat": 33.3865351,
+    "lon": -112.3748567
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1265321874,
+  "center": {
+    "lat": 33.4657703,
+    "lon": -111.6109551
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1284465629,
+  "center": {
+    "lat": 33.3772391,
+    "lon": -111.9854247
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1297133185,
+  "center": {
+    "lat": 33.7414417,
+    "lon": -112.1003721
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "5",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1297133186,
+  "center": {
+    "lat": 33.7416002,
+    "lon": -112.1002873
+  },
+  "tags": {
+    "amenity": "parking",
+    "capacity": "1",
+    "capacity:disabled": "1",
+    "parking": "surface",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1301198630,
+  "center": {
+    "lat": 33.3538281,
+    "lon": -112.0742887
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "street_side"
+  }
+},
+{
+  "type": "way",
+  "id": 1323816265,
+  "center": {
+    "lat": 33.1900385,
+    "lon": -111.6557229
+  },
+  "tags": {
+    "amenity": "parking",
+    "parking": "surface"
+  }
+},
+{
+  "type": "way",
+  "id": 1424854376,
+  "center": {
+    "lat": 33.8709495,
+    "lon": -111.6171355
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1424854380,
+  "center": {
+    "lat": 33.8698711,
+    "lon": -111.6178255
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1448279260,
+  "center": {
+    "lat": 33.5897444,
+    "lon": -112.5072218
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "way",
+  "id": 1533156883,
+  "center": {
+    "lat": 33.5873173,
+    "lon": -112.5024446
+  },
+  "tags": {
+    "amenity": "parking"
+  }
+},
+{
+  "type": "relation",
+  "id": 2004287,
+  "center": {
+    "lat": 33.4313187,
+    "lon": -111.9429546
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "charge": "2.00 USD/hour",
+    "fee": "yes",
+    "parking": "surface",
+    "surface": "paved",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 7042030,
+  "center": {
+    "lat": 33.8640572,
+    "lon": -112.0575199
+  },
+  "tags": {
+    "amenity": "parking",
+    "name": "Andy Kunasek Trail Head Parking",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 12247382,
+  "center": {
+    "lat": 33.7982346,
+    "lon": -112.0848041
+  },
+  "tags": {
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 20013297,
+  "center": {
+    "lat": 33.5848987,
+    "lon": -112.0822332
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "fee": "no",
+    "parking": "surface",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 21039375,
+  "center": {
+    "lat": 33.5986227,
+    "lon": -112.5124454
+  },
+  "tags": {
+    "amenity": "parking",
+    "type": "multipolygon"
   }
 }
 
