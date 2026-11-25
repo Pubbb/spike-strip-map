@@ -1,10 +1,11 @@
-[out:json][timeout:90];
+[out:json][timeout:240];
 (
   nwr["barrier"="spikes"](33.0,-113.0,34.0,-111.3);
   nwr["spikes"](33.0,-113.0,34.0,-111.3);
   nwr["tyre_spikes"](33.0,-113.0,34.0,-111.3);
   nwr["tire_spikes"](33.0,-113.0,34.0,-111.3);
+  node["barrier"]["note"~"spike|tire damage",i](33.0,-113.0,34.0,-111.3);
+  node["barrier"]["description"~"spike|tire damage",i](33.0,-113.0,34.0,-111.3);
   nwr["traffic_calming"~"spike",i](33.0,-113.0,34.0,-111.3);
-  nwr[~"^(note|description|name|fixme|barrier)$"~"spike|tire shred|tyre shred|severe tire",i](33.0,-113.0,34.0,-111.3);
 );
 out center tags;
