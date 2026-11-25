@@ -1,7 +1,8 @@
-[out:json][timeout:240];
-nwr["highway"="trailhead"](33.15,-112.65,33.90,-111.55)->.th;
-nwr["amenity"="parking"](around.th:300)->.pk;
-way(around.pk:80)["highway"~"^(service|unclassified|residential|tertiary|secondary|track)$"]->.rd;
-node(w.rd)["barrier"~"^(gate|lift_gate|swing_gate|spikes)$"]->.g;
-(.th; .pk; .g;);
+[out:json][timeout:120];
+way["highway"]["name"~"Piestewa Peak|Squaw Peak",i](33.50,-112.06,33.56,-111.99)->.rd;
+node(w.rd)["barrier"]->.g;
+nwr["barrier"](around.rd:40)->.g2;
+nwr["highway"="trailhead"](33.50,-112.06,33.56,-111.99)->.th;
+nwr["amenity"="parking"](around.rd:150)->.pk;
+(.g; .g2; .th; .pk;);
 out center tags;
