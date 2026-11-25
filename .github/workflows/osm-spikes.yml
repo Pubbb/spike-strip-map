@@ -1,0 +1,32 @@
+name: Fetch OSM spike locations
+# Runs the Overpass query in research/overpass-query.txt and commits the raw result.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['research/overpass-query.txt', '.github/workflows/osm-spikes.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Query Overpass (with fallback mirrors)
+        run: |
+          for h in overpass-api.de overpass.kumi.systems maps.mail.ru/osm/tools/overpass; do
+            echo "trying $h"
+            if curl -sf -m 180 -A "spike-strip-map/1.0" -X POST --data-urlencode data@research/overpass-query.txt \
+                 "https://$h/api/interpreter" -o research/osm-spikes.json \
+               && python3 -c "import json;d=json.load(open('research/osm-spikes.json'));print(len(d['elements']),'elements')"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add research/osm-spikes.json
+          git commit -m "OSM spike query result" || echo "no change"
+          git push
