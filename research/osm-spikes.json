@@ -1,14 +1,114 @@
 {
   "version": 0.6,
-  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "generator": "Overpass API 0.7.62.4 2390de5a",
   "osm3s": {
-    "timestamp_osm_base": "2026-11-25T16:03:43Z",
+    "timestamp_osm_base": "2026-11-25T16:07:49Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 1496913278,
+  "lat": 33.4359331,
+  "lon": -111.9440286,
+  "tags": {
+    "barrier": "spikes",
+    "direction": "backward",
+    "fixme": "Spikes only face North. The southbound side of the road has a gate which is closed to vehicles at night."
+  }
+},
+{
+  "type": "node",
+  "id": 1558190290,
+  "lat": 33.4473417,
+  "lon": -112.0946846,
+  "tags": {
+    "barrier": "spikes",
+    "bicycle": "yes",
+    "foot": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2925531108,
+  "lat": 33.4537468,
+  "lon": -111.9515047,
+  "tags": {
+    "barrier": "spikes",
+    "direction": "backward"
+  }
+},
+{
+  "type": "node",
+  "id": 3891229301,
+  "lat": 33.5483386,
+  "lon": -112.0418367,
+  "tags": {
+    "barrier": "spikes"
+  }
+},
+{
+  "type": "node",
+  "id": 4334936068,
+  "lat": 33.3641937,
+  "lon": -111.9755380,
+  "tags": {
+    "access": "yes",
+    "barrier": "spikes",
+    "motor_vehicle": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4901175363,
+  "lat": 33.5322608,
+  "lon": -112.0127933,
+  "tags": {
+    "barrier": "spikes",
+    "note": "backup spikes"
+  }
+},
+{
+  "type": "node",
+  "id": 5739299340,
+  "lat": 33.3073517,
+  "lon": -111.6710872,
+  "tags": {
+    "barrier": "spikes",
+    "direction": "backward"
+  }
+},
+{
+  "type": "node",
+  "id": 7094311443,
+  "lat": 33.3034323,
+  "lon": -112.1004809,
+  "tags": {
+    "barrier": "spikes"
+  }
+},
+{
+  "type": "node",
+  "id": 10116136058,
+  "lat": 33.5470392,
+  "lon": -112.0422149,
+  "tags": {
+    "barrier": "spikes"
+  }
+},
+{
+  "type": "node",
+  "id": 12756485978,
+  "lat": 33.3514920,
+  "lon": -112.1002724,
+  "tags": {
+    "barrier": "spikes",
+    "direction": "forward"
+  }
+}
 
-
-  ],
-"remark": "runtime error: Query timed out in \"query\" at line 8 after 139 seconds."
+  ]
 }
