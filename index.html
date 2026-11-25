@@ -74,7 +74,7 @@
     <div style="flex:1">
       <div class="grip"></div>
       <h2>Nearest <span class="muted" id="count"></span></h2>
-      <div id="legend"><span><i style="background:#2ecc71"></i>Confirmed</span><span><i style="background:#3b8cff"></i>Mapped in OSM</span><span><i style="background:#f1c40f"></i>To verify</span></div>
+      <div id="legend"><span><i style="background:#2ecc71"></i>Confirmed</span><span><i style="background:#3b8cff"></i>Mapped in OSM</span><span><i style="background:#f1c40f"></i>To verify</span><span><i style="background:#ff8c42"></i>Candidate</span></div>
     </div>
   </div>
   <ul id="list"></ul>
@@ -86,7 +86,7 @@
 <script>
 (() => {
   const STORE_KEY = 'ssm.locations.v1';
-  const STATUS_COLORS = { confirmed: '#2ecc71', 'mapped in osm': '#3b8cff', 'to verify': '#f1c40f', 'no spikes': '#7f8a96' };
+  const STATUS_COLORS = { confirmed: '#2ecc71', 'mapped in osm': '#3b8cff', 'to verify': '#f1c40f', candidate: '#ff8c42', 'no spikes': '#7f8a96' };
 
   const map = L.map('map', { zoomControl: false }).setView([33.45, -112.0], 10);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

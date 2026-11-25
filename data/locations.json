@@ -168,5 +168,245 @@
   "source": "OSM node 5739299340",
   "lat": 33.3073517,
   "lng": -111.6710872
+ },
+ {
+  "name": "Javelina Canyon Trailhead (South Mountain)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate on the lot access road, ~70 m from the trailhead. ~1 mi west of the Pima Canyon spikes. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 8912521254",
+  "lat": 33.3747862,
+  "lng": -111.98592
+ },
+ {
+  "name": "Beverly Canyon Trailhead (South Mountain)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate on the access road, ~350 m from the trailhead; several more gates along the same road. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 2161484366",
+  "lat": 33.3766511,
+  "lng": -111.9826427
+ },
+ {
+  "name": "Tempe – unnamed trailhead lot",
+  "city": "Tempe",
+  "status": "Candidate",
+  "notes": "Trailhead has no name in OSM; gate ~80 m from it. ~0.4 mi from the Mill Ave spikes. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 12284549605",
+  "lat": 33.4307476,
+  "lng": -111.9428539
+ },
+ {
+  "name": "Holbert Trailhead (South Mountain)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate ~130 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 8939878997",
+  "lat": 33.3542209,
+  "lng": -112.0728649
+ },
+ {
+  "name": "Tatum Boulevard Trailhead",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate ~80 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 7151213515",
+  "lat": 33.5639873,
+  "lng": -111.9780456
+ },
+ {
+  "name": "Charles M. Christiansen Trail 100 start",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Two gates ~100 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 8487538951",
+  "lat": 33.5796166,
+  "lng": -112.0827838
+ },
+ {
+  "name": "Reach 11 Trailhead",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Two gates ~230 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 6055950862",
+  "lat": 33.6958115,
+  "lng": -112.0277905
+ },
+ {
+  "name": "Swallowtail Trail (Estrella Mountain area)",
+  "city": "Goodyear",
+  "status": "Candidate",
+  "notes": "Gate ~240 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 7046707919",
+  "lat": 33.3864107,
+  "lng": -112.3745403
+ },
+ {
+  "name": "Golden Eagle Trailhead",
+  "city": "Fountain Hills",
+  "status": "Candidate",
+  "notes": "Gate at the trailhead parking. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 355025426",
+  "lat": 33.6359223,
+  "lng": -111.7689021
+ },
+ {
+  "name": "Hawk's Nest Trailhead (Sonoran Preserve)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate ~260 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 12018169415",
+  "lat": 33.7417568,
+  "lng": -112.0998936
+ },
+ {
+  "name": "Pinnacle Peak Park trailhead",
+  "city": "Scottsdale",
+  "status": "Candidate",
+  "notes": "Two gates ~130 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 9694602433",
+  "lat": 33.7284109,
+  "lng": -111.8590084
+ },
+ {
+  "name": "Bobcat Trailhead (Sonoran Preserve)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate ~50 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 10816361775",
+  "lat": 33.7701698,
+  "lng": -112.1003041
+ },
+ {
+  "name": "Lost Sheep Trailhead (Usery Mountain)",
+  "city": "Mesa",
+  "status": "Candidate",
+  "notes": "Two gates ~150 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 11754035727",
+  "lat": 33.480907,
+  "lng": -111.6194346
+ },
+ {
+  "name": "Sidewinder Trailhead (Sonoran Preserve)",
+  "city": "Phoenix",
+  "status": "Candidate",
+  "notes": "Gate ~210 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 1198879798",
+  "lat": 33.7978759,
+  "lng": -112.0827746
+ },
+ {
+  "name": "McDowell Mountain Regional Park – Competitive Track",
+  "city": "Fountain Hills",
+  "status": "Candidate",
+  "notes": "Lift gate ~430 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 6145086935",
+  "lat": 33.6674215,
+  "lng": -111.6978909
+ },
+ {
+  "name": "Maricopa Trail Trailhead (McDowell Sonoran Preserve)",
+  "city": "Scottsdale",
+  "status": "Candidate",
+  "notes": "Gate tagged open sunrise–sunset. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 8441769649",
+  "lat": 33.7421306,
+  "lng": -111.7913818
+ },
+ {
+  "name": "Lousley Hill Trailhead",
+  "city": "Fountain Hills",
+  "status": "Candidate",
+  "notes": "Gate ~240 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 4197371599",
+  "lat": 33.7117634,
+  "lng": -111.7021308
+ },
+ {
+  "name": "Granite Mountain Trailhead",
+  "city": "Scottsdale",
+  "status": "Candidate",
+  "notes": "City of Scottsdale lot; gate tagged open sunrise–sunset. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 8440854802",
+  "lat": 33.7700109,
+  "lng": -111.787627
+ },
+ {
+  "name": "Maricopa Trail Trailhead at Sun Valley",
+  "city": "Buckeye",
+  "status": "Candidate",
+  "notes": "Gate at the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 6876426896",
+  "lat": 33.638157,
+  "lng": -112.4701719
+ },
+ {
+  "name": "White Tank Mountain – Mesquite Canyon area",
+  "city": "Waddell",
+  "status": "Candidate",
+  "notes": "Gate ~580 m from the trailhead; another gate here is tagged private. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 1144056672",
+  "lat": 33.5924597,
+  "lng": -112.5011443
+ },
+ {
+  "name": "Tonto NF Cave Creek Visitor Station trailhead",
+  "city": "Cave Creek",
+  "status": "Candidate",
+  "notes": "Gate ~160 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 3337672846",
+  "lat": 33.8489327,
+  "lng": -111.8289818
+ },
+ {
+  "name": "Dragon Fly Trailhead",
+  "city": "Cave Creek",
+  "status": "Candidate",
+  "notes": "Three gates at the trailhead parking. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 7165447311",
+  "lat": 33.8843625,
+  "lng": -111.9544662
+ },
+ {
+  "name": "Maricopa Trail Trailhead at Lake Pleasant",
+  "city": "Peoria",
+  "status": "Candidate",
+  "notes": "Gate ~80 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 1064603834",
+  "lat": 33.8469802,
+  "lng": -112.2765075
+ },
+ {
+  "name": "Lake Pleasant Boat Launch trailhead",
+  "city": "Peoria",
+  "status": "Candidate",
+  "notes": "Gate ~160 m from the trailhead. Spikes not confirmed.",
+  "street_view": "Not checked",
+  "source": "OSM gate node 2726803445",
+  "lat": 33.8541566,
+  "lng": -112.2881884
  }
 ]
