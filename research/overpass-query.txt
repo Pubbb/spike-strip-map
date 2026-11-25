@@ -1,7 +1,7 @@
 [out:json][timeout:240];
 nwr["highway"="trailhead"](33.15,-112.65,33.90,-111.55)->.th;
-nwr["amenity"="parking"]["name"~"trailhead",i](33.15,-112.65,33.90,-111.55)->.tp;
-(.th; .tp;)->.all;
-nwr(around.all:250)["barrier"~"^(gate|lift_gate|swing_gate|spikes)$"]->.gates;
-(.all; .gates;);
+nwr["amenity"="parking"](around.th:300)->.pk;
+way(around.pk:80)["highway"~"^(service|unclassified|residential|tertiary|secondary|track)$"]->.rd;
+node(w.rd)["barrier"~"^(gate|lift_gate|swing_gate|spikes)$"]->.g;
+(.th; .pk; .g;);
 out center tags;
