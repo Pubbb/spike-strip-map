@@ -28,7 +28,7 @@
   #sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; background: var(--panel);
     border-top: 1px solid var(--line); border-radius: 16px 16px 0 0; max-height: 45vh; display: flex; flex-direction: column;
     padding-bottom: env(safe-area-inset-bottom); transition: max-height .2s; }
-  #sheet.collapsed { max-height: 64px; }
+  #sheet.collapsed { max-height: 84px; }
   .sheet-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; }
   .grip { width: 36px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto 4px; }
   .sheet-head h2 { margin: 0; font-size: 15px; flex: 1; }
@@ -49,8 +49,10 @@
   .pop table { border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
   .pop td { padding: 2px 8px 2px 0; vertical-align: top; }
   .pop td:first-child { color: var(--muted); }
-  .pop a.go { display: inline-flex; align-items: center; text-decoration: none; }
+  .pop a.go { color: #111; display: inline-flex; align-items: center; text-decoration: none; }
   .me { width: 18px; height: 18px; border-radius: 50%; background: #2f80ff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(47,128,255,.25); }
+  #legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 12px; color: var(--muted); }
+  #legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
   #toast { position: fixed; left: 50%; top: calc(env(safe-area-inset-top) + 64px); transform: translateX(-50%); z-index: 1100;
     background: #000c; color: #fff; padding: 8px 14px; border-radius: 10px; font-size: 14px; display: none; max-width: 90vw; }
 </style>
@@ -70,6 +72,7 @@
     <div style="flex:1">
       <div class="grip"></div>
       <h2>Nearest <span class="muted" id="count"></span></h2>
+      <div id="legend"><span><i style="background:#2ecc71"></i>Confirmed</span><span><i style="background:#3b8cff"></i>Mapped in OSM</span><span><i style="background:#f1c40f"></i>To verify</span></div>
     </div>
   </div>
   <ul id="list"></ul>
@@ -81,10 +84,9 @@
 <script>
 (() => {
   const STORE_KEY = 'ssm.locations.v1';
-  const STATUS_COLORS = { available: '#2ecc71', ready: '#2ecc71', deployed: '#f39c12', 'in use': '#f39c12',
-    maintenance: '#e74c3c', damaged: '#e74c3c', missing: '#e74c3c' };
+  const STATUS_COLORS = { confirmed: '#2ecc71', 'mapped in osm': '#3b8cff', 'to verify': '#f1c40f', 'no spikes': '#7f8a96' };
 
-  const map = L.map('map', { zoomControl: false }).setView([39.5, -98.35], 4);
+  const map = L.map('map', { zoomControl: false }).setView([33.45, -112.0], 10);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19, attribution: '&copy; OpenStreetMap'
   }).addTo(map);
@@ -153,9 +155,10 @@
     : `https://www.google.com/maps/dir/?api=1&destination=${p._lat},${p._lng}`;
 
   function popupHtml(p) {
+    const label = k => k.replace(/_/g, ' ').replace(/^./, c => c.toUpperCase());
     const rows = Object.entries(p).filter(([k, v]) => !k.startsWith('_') && v !== '' && v != null
-      && ![...LAT, ...LNG].includes(k.toLowerCase()))
-      .map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('');
+      && ![...LAT, ...LNG, ...NAME].includes(k.toLowerCase()))
+      .map(([k, v]) => `<tr><td>${esc(label(k))}</td><td>${esc(v)}</td></tr>`).join('');
     const d = me ? ` · ${fmtDist(km(me, [p._lat, p._lng]))}` : '';
     return `<div class="pop"><h3>${esc(p._name)}${esc(d)}</h3><table>${rows}</table>
       <a class="go" href="${navUrl(p)}" target="_blank" rel="noopener">Navigate ➜</a></div>`;
@@ -174,13 +177,13 @@
     const list = filtered();
     list.forEach(p => {
       p._marker = L.circleMarker([p._lat, p._lng], { radius: 9, weight: 2, color: '#111', fillColor: colorFor(p), fillOpacity: 1 })
-        .bindPopup(() => popupHtml(p)).addTo(layer);
+        .bindPopup(() => popupHtml(p), { maxWidth: 300, autoPanPaddingTopLeft: [10, 70], autoPanPaddingBottomRight: [10, 100] }).addTo(layer);
     });
     $('count').textContent = `· ${list.length}${list.length !== points.length ? ' of ' + points.length : ''}`;
     $('list').innerHTML = list.length ? list.slice(0, 50).map((p, i) => `
       <li data-i="${i}">
         <span class="dot" style="background:${colorFor(p)}"></span>
-        <div class="info"><b>${esc(p._name)}</b><span>${esc([p.status, p.qty != null && p.qty !== '' ? 'qty ' + p.qty : '', p.notes].filter(Boolean).join(' · '))}</span></div>
+        <div class="info"><b>${esc(p._name)}</b><span>${esc([p.status, p.city].filter(Boolean).join(' · '))}</span></div>
         ${me ? `<span class="dist">${fmtDist(p._d)}</span>` : ''}
         <a class="go" href="${navUrl(p)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Go</a>
       </li>`).join('')

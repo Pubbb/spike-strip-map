@@ -1,5 +1,172 @@
 [
-  { "name": "SAMPLE - Station 1", "lat": 39.7392, "lng": -104.9903, "status": "available", "qty": 2, "notes": "Replace this file with the real handover data" },
-  { "name": "SAMPLE - Unit 14 trunk", "lat": 39.7508, "lng": -104.9966, "status": "deployed", "qty": 1, "notes": "" },
-  { "name": "SAMPLE - Substation East", "lat": 39.7294, "lng": -104.9411, "status": "maintenance", "qty": 3, "notes": "" }
+ {
+  "name": "Sky Harbor Rental Car Center",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "1805 E Sky Harbor Cir S.",
+  "street_view": "Checked the Rental Car Exit road south of Sky Harbor Cir S: no spikes there. Garage and return-lane exits have no Street View.",
+  "source": "Your list",
+  "lat": 33.4308021,
+  "lng": -112.0444395
+ },
+ {
+  "name": "Wesley Bolin Memorial Plaza parking (State Capitol)",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "Lot by the memorials (USS Arizona mast, Korean War Memorial).",
+  "street_view": "Not checked",
+  "source": "OSM node 1558190290",
+  "lat": 33.4473417,
+  "lng": -112.0946846
+ },
+ {
+  "name": "Mormon Trailhead (South Mountain)",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "Off E Valley View Dr / S 24th St.",
+  "street_view": "Checked Valley View Dr outside the lot: nothing visible. The lot's own gate has no Street View.",
+  "source": "Your list",
+  "lat": 33.3664458,
+  "lng": -112.0310757
+ },
+ {
+  "name": "Papago Park – N Papago Rd",
+  "city": "Phoenix",
+  "status": "Confirmed",
+  "notes": "One-way park road toward the Hole in the Rock area.",
+  "street_view": "Spike strip clearly visible across the one-way lane, with a swing gate beside it.",
+  "source": "OSM node 2925531108 + Street View",
+  "lat": 33.4537468,
+  "lng": -111.9515047
+ },
+ {
+  "name": "Phoenix Zoo",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "455 N Galvin Pkwy.",
+  "street_view": "Not checked: only visitor photos near the entrance came up, no road imagery of the lot exits.",
+  "source": "Your list",
+  "lat": 33.4496185,
+  "lng": -111.9463685
+ },
+ {
+  "name": "Tempe – N Mill Ave near Rio Salado",
+  "city": "Tempe",
+  "status": "Mapped in OSM",
+  "notes": "Mapper note: spikes face north only; southbound side has a gate closed to vehicles at night.",
+  "street_view": "Not checked",
+  "source": "OSM node 1496913278",
+  "lat": 33.4359331,
+  "lng": -111.9440286
+ },
+ {
+  "name": "Hole in the Rock",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "Coordinates are the rock; parking is just west of it.",
+  "street_view": "No Street View at the lot itself. The confirmed Papago Rd spikes are about 0.4 mi west on the way in.",
+  "source": "Your list",
+  "lat": 33.4562331,
+  "lng": -111.945164
+ },
+ {
+  "name": "32nd Street Trailhead / E Lincoln Dr",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "Private one-way parking aisle; mapper tagged it \"backup spikes\".",
+  "street_view": "Not checked",
+  "source": "OSM node 4901175363",
+  "lat": 33.5322608,
+  "lng": -112.0127933
+ },
+ {
+  "name": "Pima Canyon Rd (Pima Canyon Trailhead approach)",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "Matches your coordinate (33.3642085, -111.9754836) to within ~3 m.",
+  "street_view": "Checked the gatehouse at your coordinate: strip not visible in that capture. It may sit just past the gatehouse.",
+  "source": "OSM node 4334936068 + your list",
+  "lat": 33.3641937,
+  "lng": -111.975538
+ },
+ {
+  "name": "Dobbins Lookout (South Mountain)",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "Coordinates are the lookout peak on Summit Rd.",
+  "street_view": "Not checked",
+  "source": "Your list",
+  "lat": 33.3451533,
+  "lng": -112.0584242
+ },
+ {
+  "name": "South Mountain – 19th Ave trailhead area",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "One-way parking aisle near Ma Ha Tuak Trail.",
+  "street_view": "Not checked",
+  "source": "OSM node 12756485978",
+  "lat": 33.351492,
+  "lng": -112.1002724
+ },
+ {
+  "name": "Pointe Business Park – driveway",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "One-way driveway, ~150 m from the Frier Dr spikes.",
+  "street_view": "Not checked",
+  "source": "OSM node 10116136058",
+  "lat": 33.5470392,
+  "lng": -112.0422149
+ },
+ {
+  "name": "Pointe Business Park – E Frier Dr",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "Parking aisle on Frier Dr.",
+  "street_view": "Not checked",
+  "source": "OSM node 3891229301",
+  "lat": 33.5483386,
+  "lng": -112.0418367
+ },
+ {
+  "name": "Dreamy Draw Dam / Recreation Area",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "Coordinates are the dam; lot is at 2421 E Northern Ave.",
+  "street_view": "Only visitor photos inside the park came up; the lot entrance off Northern Ave wasn't covered.",
+  "source": "Your list",
+  "lat": 33.5639424,
+  "lng": -112.0325219
+ },
+ {
+  "name": "Ahwatukee – dirt lot (85045)",
+  "city": "Phoenix",
+  "status": "Mapped in OSM",
+  "notes": "Dirt parking aisle next to a fire station construction site. Imagery may be stale.",
+  "street_view": "Not checked",
+  "source": "OSM node 7094311443",
+  "lat": 33.3034323,
+  "lng": -112.1004809
+ },
+ {
+  "name": "Apache Wash Trailhead",
+  "city": "Phoenix",
+  "status": "To verify",
+  "notes": "1600 E Sonoran Desert Dr.",
+  "street_view": "Not checked",
+  "source": "Your list",
+  "lat": 33.7686575,
+  "lng": -112.0439947
+ },
+ {
+  "name": "Mesa – S Kent St (Embry-Riddle / ASU Poly area)",
+  "city": "Mesa",
+  "status": "Mapped in OSM",
+  "notes": "Service road off E Texas Ave.",
+  "street_view": "Not checked",
+  "source": "OSM node 5739299340",
+  "lat": 33.3073517,
+  "lng": -111.6710872
+ }
 ]
