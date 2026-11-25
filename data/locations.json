@@ -1,0 +1,5 @@
+[
+  { "name": "SAMPLE - Station 1", "lat": 39.7392, "lng": -104.9903, "status": "available", "qty": 2, "notes": "Replace this file with the real handover data" },
+  { "name": "SAMPLE - Unit 14 trunk", "lat": 39.7508, "lng": -104.9966, "status": "deployed", "qty": 1, "notes": "" },
+  { "name": "SAMPLE - Substation East", "lat": 39.7294, "lng": -104.9411, "status": "maintenance", "qty": 3, "notes": "" }
+]

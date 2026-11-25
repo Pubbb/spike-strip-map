@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111418">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Spike Strip Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root {
+    --bg: #111418; --panel: #1b2027; --line: #2c333d; --text: #e8ecf1; --muted: #8b95a3;
+    --accent: #ffb020; --ok: #2ecc71; --warn: #f39c12; --bad: #e74c3c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font: 15px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  #map { position: fixed; inset: 0; }
+  .top { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; gap: 8px;
+    padding: calc(env(safe-area-inset-top) + 10px) 12px 10px; pointer-events: none; }
+  .top > * { pointer-events: auto; }
+  #search { flex: 1; min-width: 0; height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line);
+    background: var(--panel); color: var(--text); font-size: 16px; }
+  .btn { height: 44px; min-width: 44px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line);
+    background: var(--panel); color: var(--text); font-size: 15px; font-weight: 600; }
+  .btn:active { background: var(--line); }
+  .btn.primary { background: var(--accent); color: #111; border-color: var(--accent); }
+  #sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; background: var(--panel);
+    border-top: 1px solid var(--line); border-radius: 16px 16px 0 0; max-height: 45vh; display: flex; flex-direction: column;
+    padding-bottom: env(safe-area-inset-bottom); transition: max-height .2s; }
+  #sheet.collapsed { max-height: 64px; }
+  .sheet-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; }
+  .grip { width: 36px; height: 4px; border-radius: 2px; background: var(--line); margin: 0 auto 4px; }
+  .sheet-head h2 { margin: 0; font-size: 15px; flex: 1; }
+  .sheet-head .muted { color: var(--muted); font-size: 13px; }
+  #list { list-style: none; margin: 0; padding: 0 8px 8px; overflow-y: auto; }
+  #list li { display: flex; align-items: center; gap: 10px; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  #list li:last-child { border-bottom: 0; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .info { flex: 1; min-width: 0; }
+  .info b { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .info span { color: var(--muted); font-size: 13px; }
+  .dist { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 700; font-size: 14px; }
+  .go { height: 36px; padding: 0 12px; border-radius: 10px; border: 0; background: var(--accent); color: #111; font-weight: 700; }
+  .empty { padding: 16px; color: var(--muted); text-align: center; }
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel); color: var(--text); }
+  .leaflet-popup-content { margin: 12px 14px; }
+  .pop h3 { margin: 0 0 6px; font-size: 15px; }
+  .pop table { border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+  .pop td { padding: 2px 8px 2px 0; vertical-align: top; }
+  .pop td:first-child { color: var(--muted); }
+  .pop a.go { display: inline-flex; align-items: center; text-decoration: none; }
+  .me { width: 18px; height: 18px; border-radius: 50%; background: #2f80ff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(47,128,255,.25); }
+  #toast { position: fixed; left: 50%; top: calc(env(safe-area-inset-top) + 64px); transform: translateX(-50%); z-index: 1100;
+    background: #000c; color: #fff; padding: 8px 14px; border-radius: 10px; font-size: 14px; display: none; max-width: 90vw; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<div class="top">
+  <input id="search" type="search" placeholder="Search locations…" autocomplete="off">
+  <button class="btn" id="locate" title="My location" aria-label="My location">◎</button>
+  <button class="btn" id="importBtn" title="Load data file" aria-label="Load data file">⇪</button>
+  <input id="file" type="file" accept=".json,.csv,.geojson,application/json,text/csv" hidden>
+</div>
+
+<div id="sheet">
+  <div class="sheet-head" id="sheetHead">
+    <div style="flex:1">
+      <div class="grip"></div>
+      <h2>Nearest <span class="muted" id="count"></span></h2>
+    </div>
+  </div>
+  <ul id="list"></ul>
+</div>
+
+<div id="toast"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  const STORE_KEY = 'ssm.locations.v1';
+  const STATUS_COLORS = { available: '#2ecc71', ready: '#2ecc71', deployed: '#f39c12', 'in use': '#f39c12',
+    maintenance: '#e74c3c', damaged: '#e74c3c', missing: '#e74c3c' };
+
+  const map = L.map('map', { zoomControl: false }).setView([39.5, -98.35], 4);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+  const layer = L.layerGroup().addTo(map);
+
+  let points = [];
+  let me = null, meMarker = null, meCircle = null;
+  const $ = id => document.getElementById(id);
+
+  const toast = (msg, ms = 2500) => {
+    const t = $('toast'); t.textContent = msg; t.style.display = 'block';
+    clearTimeout(toast._t); toast._t = setTimeout(() => t.style.display = 'none', ms);
+  };
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const colorFor = p => STATUS_COLORS[String(p.status || '').toLowerCase()] || '#ffb020';
+
+  // ---------- data normalisation (flexible: JSON array, GeoJSON, CSV) ----------
+  const LAT = ['lat', 'latitude', 'y'];
+  const LNG = ['lng', 'lon', 'long', 'longitude', 'x'];
+  const NAME = ['name', 'title', 'label', 'location', 'site', 'id'];
+  const pick = (o, keys) => { for (const k of Object.keys(o)) if (keys.includes(k.toLowerCase().trim())) return o[k]; };
+
+  function normalise(rows) {
+    return rows.map((r, i) => {
+      const lat = parseFloat(pick(r, LAT)), lng = parseFloat(pick(r, LNG));
+      if (!isFinite(lat) || !isFinite(lng)) return null;
+      return { ...r, _lat: lat, _lng: lng, _name: String(pick(r, NAME) ?? `Location ${i + 1}`) };
+    }).filter(Boolean);
+  }
+
+  function parseCSV(text) {
+    const rows = []; let row = [], cur = '', q = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (q) { if (c === '"' && text[i + 1] === '"') { cur += '"'; i++; } else if (c === '"') q = false; else cur += c; }
+      else if (c === '"') q = true;
+      else if (c === ',') { row.push(cur); cur = ''; }
+      else if (c === '\n' || c === '\r') { if (c === '\r' && text[i + 1] === '\n') i++; row.push(cur); rows.push(row); row = []; cur = ''; }
+      else cur += c;
+    }
+    if (cur || row.length) { row.push(cur); rows.push(row); }
+    const [head, ...body] = rows.filter(r => r.some(v => v.trim()));
+    return body.map(r => Object.fromEntries(head.map((h, i) => [h.trim(), (r[i] ?? '').trim()])));
+  }
+
+  function parseAny(text, filename = '') {
+    const t = text.trim();
+    if (/\.csv$/i.test(filename) || !/^[\[{]/.test(t)) return normalise(parseCSV(t));
+    const j = JSON.parse(t);
+    if (j.type === 'FeatureCollection') {
+      return normalise(j.features.filter(f => f.geometry?.type === 'Point').map(f => ({
+        ...f.properties, lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] })));
+    }
+    return normalise(Array.isArray(j) ? j : (j.locations || j.data || []));
+  }
+
+  // ---------- rendering ----------
+  const km = (a, b) => {
+    const R = 6371, r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLng = (b[1] - a[1]) * r;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[0] * r) * Math.cos(b[0] * r) * Math.sin(dLng / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  };
+  const fmtDist = k => { const mi = k * 0.621371; return mi < 0.1 ? `${Math.round(mi * 5280)} ft` : `${mi.toFixed(mi < 10 ? 1 : 0)} mi`; };
+  const navUrl = p => /iPhone|iPad|iPod/.test(navigator.userAgent)
+    ? `https://maps.apple.com/?daddr=${p._lat},${p._lng}`
+    : `https://www.google.com/maps/dir/?api=1&destination=${p._lat},${p._lng}`;
+
+  function popupHtml(p) {
+    const rows = Object.entries(p).filter(([k, v]) => !k.startsWith('_') && v !== '' && v != null
+      && ![...LAT, ...LNG].includes(k.toLowerCase()))
+      .map(([k, v]) => `<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('');
+    const d = me ? ` · ${fmtDist(km(me, [p._lat, p._lng]))}` : '';
+    return `<div class="pop"><h3>${esc(p._name)}${esc(d)}</h3><table>${rows}</table>
+      <a class="go" href="${navUrl(p)}" target="_blank" rel="noopener">Navigate ➜</a></div>`;
+  }
+
+  function filtered() {
+    const q = $('search').value.trim().toLowerCase();
+    let list = q ? points.filter(p => Object.values(p).some(v => String(v).toLowerCase().includes(q))) : points.slice();
+    if (me) list.forEach(p => p._d = km(me, [p._lat, p._lng]));
+    if (me) list.sort((a, b) => a._d - b._d);
+    return list;
+  }
+
+  function render(fit = false) {
+    layer.clearLayers();
+    const list = filtered();
+    list.forEach(p => {
+      p._marker = L.circleMarker([p._lat, p._lng], { radius: 9, weight: 2, color: '#111', fillColor: colorFor(p), fillOpacity: 1 })
+        .bindPopup(() => popupHtml(p)).addTo(layer);
+    });
+    $('count').textContent = `· ${list.length}${list.length !== points.length ? ' of ' + points.length : ''}`;
+    $('list').innerHTML = list.length ? list.slice(0, 50).map((p, i) => `
+      <li data-i="${i}">
+        <span class="dot" style="background:${colorFor(p)}"></span>
+        <div class="info"><b>${esc(p._name)}</b><span>${esc([p.status, p.qty != null && p.qty !== '' ? 'qty ' + p.qty : '', p.notes].filter(Boolean).join(' · '))}</span></div>
+        ${me ? `<span class="dist">${fmtDist(p._d)}</span>` : ''}
+        <a class="go" href="${navUrl(p)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;text-decoration:none">Go</a>
+      </li>`).join('')
+      : `<li class="empty">${points.length ? 'No matches.' : 'No locations loaded. Tap ⇪ to load a CSV / JSON file.'}</li>`;
+    $('list').querySelectorAll('li[data-i]').forEach(li => li.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      const p = list[+li.dataset.i];
+      map.setView([p._lat, p._lng], Math.max(map.getZoom(), 15));
+      p._marker.openPopup();
+      $('sheet').classList.add('collapsed');
+    }));
+    if (fit && list.length) map.fitBounds(L.latLngBounds(list.map(p => [p._lat, p._lng])).pad(0.2), { maxZoom: 15 });
+  }
+
+  function setData(rows, source) {
+    points = rows;
+    render(!me);
+    toast(`${rows.length} locations loaded${source ? ' from ' + source : ''}`);
+  }
+
+  // ---------- geolocation ----------
+  function locate(center) {
+    if (!navigator.geolocation) return toast('Location not supported on this device');
+    navigator.geolocation.watchPosition(pos => {
+      const first = !me;
+      me = [pos.coords.latitude, pos.coords.longitude];
+      if (!meMarker) {
+        meMarker = L.marker(me, { icon: L.divIcon({ className: '', html: '<div class="me"></div>', iconSize: [18, 18] }), zIndexOffset: 1000 }).addTo(map);
+        meCircle = L.circle(me, { radius: pos.coords.accuracy, color: '#2f80ff', weight: 1, fillOpacity: 0.08 }).addTo(map);
+      } else { meMarker.setLatLng(me); meCircle.setLatLng(me).setRadius(pos.coords.accuracy); }
+      if (first && center) {
+        const near = filtered().slice(0, 3).map(p => [p._lat, p._lng]);
+        map.fitBounds(L.latLngBounds([me, ...near]).pad(0.3), { maxZoom: 16 });
+      }
+      render();
+    }, err => toast('Location unavailable: ' + err.message), { enableHighAccuracy: true, maximumAge: 10000, timeout: 15000 });
+  }
+  $('locate').onclick = () => me ? map.setView(me, Math.max(map.getZoom(), 14)) : locate(true);
+
+  // ---------- UI ----------
+  $('search').addEventListener('input', () => render());
+  $('sheetHead').onclick = () => $('sheet').classList.toggle('collapsed');
+  $('importBtn').onclick = () => $('file').click();
+  $('file').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const rows = parseAny(await f.text(), f.name);
+      if (!rows.length) return toast('No rows with lat/lng found in that file');
+      try { localStorage.setItem(STORE_KEY, JSON.stringify(rows)); } catch {}
+      setData(rows, f.name);
+    } catch (err) { toast('Could not read file: ' + err.message, 4000); }
+    e.target.value = '';
+  };
+
+  // ---------- boot: ?data=URL  >  locally imported file  >  data/locations.json ----------
+  (async () => {
+    const params = new URLSearchParams(location.search);
+    if (params.has('reset')) try { localStorage.removeItem(STORE_KEY); } catch {}
+    const qs = params.get('data');
+    if (!qs) {
+      let saved = null; try { saved = JSON.parse(localStorage.getItem(STORE_KEY)); } catch {}
+      if (saved?.length) { setData(saved, 'this device'); locate(false); return; }
+    }
+    const src = qs || 'data/locations.json';
+    try {
+      const res = await fetch(src, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(res.status);
+      setData(parseAny(await res.text(), src), src.split('/').pop());
+    } catch (err) { render(); toast('No data file found — tap ⇪ to load one', 4000); }
+    locate(false);
+  })();
+})();
+</script>
+</body>
+</html>
